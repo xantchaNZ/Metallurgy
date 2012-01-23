@@ -1,0 +1,13 @@
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metullargy.exe
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metullargy.pdb
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metullargy.MainForm.resources
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metullargy.Properties.Resources.resources
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Metullargy.exe.config
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Metullargy.exe
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Metullargy.pdb
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Data.dll
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Data.pdb
+E:\Nico\Metallurgy\Metullargy\bin\Debug\Metallurgy.exe.config

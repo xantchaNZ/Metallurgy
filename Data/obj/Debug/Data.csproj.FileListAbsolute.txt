@@ -1,0 +1,15 @@
+E:\Nico\Metullargy\Metullargy\Data\bin\Debug\Data.dll
+E:\Nico\Metullargy\Metullargy\Data\bin\Debug\Data.pdb
+E:\Nico\Metullargy\Metullargy\Data\obj\Debug\ResolveAssemblyReference.cache
+E:\Nico\Metullargy\Metullargy\Data\obj\Debug\Data.dll
+E:\Nico\Metullargy\Metullargy\Data\obj\Debug\Data.pdb
+E:\Nico\Metullargy\Data\bin\Debug\Data.dll
+E:\Nico\Metullargy\Data\bin\Debug\Data.pdb
+E:\Nico\Metullargy\Data\obj\Debug\ResolveAssemblyReference.cache
+E:\Nico\Metullargy\Data\obj\Debug\Data.dll
+E:\Nico\Metullargy\Data\obj\Debug\Data.pdb
+E:\Nico\Metallurgy\Data\bin\Debug\Data.dll
+E:\Nico\Metallurgy\Data\bin\Debug\Data.pdb
+E:\Nico\Metallurgy\Data\obj\Debug\ResolveAssemblyReference.cache
+E:\Nico\Metallurgy\Data\obj\Debug\Data.dll
+E:\Nico\Metallurgy\Data\obj\Debug\Data.pdb
