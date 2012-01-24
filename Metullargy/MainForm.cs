@@ -10,6 +10,30 @@ namespace Metallurgy
 {
 	public partial class MainForm : Form
 	{
+/*
+	****************
+	*  METULLARGY  *
+	****************
+
+Tool that will
+Be a unit Database
+ * Searching, sorting, groups etc
+Show Unit Rankings
+ * Show total unit average damages
+ * Show unit potential damages
+ * Calculate true rally value for rally units
+ * Calculate true boost value for boost units
+ * Calculate bonuses towards heal pervention, damage prevention for epics, AV, typhon etc)
+Allow you to drag and drop build forces
+Run test attacks vs epics (test ratios etc etc) Test Hits
+Calculate, DMG per stam, ratios etc for forces
+Calculate stam costs to hit caps in epics
+
+ * TODO:
+Healing
+Plug in Vindicators
+*/
+	
 		public MainForm()
 		{
 			InitializeComponent();

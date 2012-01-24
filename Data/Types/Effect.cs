@@ -1,4 +1,5 @@
-﻿using Data.Types.Enums;
+﻿using System.Collections.Generic;
+using Data.Types.Enums;
 
 namespace Data.Types
 {
@@ -26,7 +27,30 @@ namespace Data.Types
 				VsEpicOnly = vsEpic
 			};
 		}
-		
+
+		public static Effect CreateFlurryDamageEffect(int min, int max, int times, bool vsEpic)
+		{
+			return new Effect
+			{
+				Type = EffectType.FlurryDamage,
+				Min = min,
+				Max = max,
+				EffectValue = times,
+				VsEpicOnly = vsEpic
+			};
+		}
+
+		public static Effect CreateConditionalDamageEffect(Classification target, int minPer, int maxPer)
+		{
+			return new Effect
+			{
+				Type = EffectType.ConditionalDamage,
+				TargetType = target,
+				Min = minPer,
+				Max = maxPer,
+			};
+		}
+
 		public static Effect CreateHealEffect(int min, int max, bool vsEpic)
 		{
 			return new Effect
@@ -38,15 +62,25 @@ namespace Data.Types
 			};
 		}
 
-		public static Effect CreateFlurryDamageEffect(int min, int max, int times, bool vsEpic)
+		public static Effect CreateAntiHealEffect(int min, int max, bool vsEpic)
 		{
 			return new Effect
 			{
-				Type = EffectType.FlurryDamage,
+				Type = EffectType.AntiHeal,
 				Min = min,
 				Max = max,
-				EffectValue = times,
 				VsEpicOnly = vsEpic
+			};
+		}
+
+		public static Effect CreateConditionalHealEffect(Classification target, int minPer, int maxPer)
+		{
+			return new Effect
+			{
+				Type = EffectType.ConditionalHeal,
+				TargetType = target,
+				Min = minPer,
+				Max = maxPer,
 			};
 		}
 
@@ -80,6 +114,35 @@ namespace Data.Types
 			};
 		}
 
+		public static Effect CreatePreventJamEffect(int amount)
+		{
+			return new Effect
+			{
+				Type = EffectType.PreventJam,
+				EffectValue = amount,
+			};
+		}
+
+		public static Effect CreateControlEffect(Classification target, int amount)
+		{
+			return new Effect
+			{
+				Type = EffectType.Control,
+				TargetType = target,
+				EffectValue = amount,
+			};
+		}
+
+		public static Effect CreateReinforceEffect(Classification target, int amount)
+		{
+			return new Effect
+			{
+				Type = EffectType.Reinforce,
+				TargetType = target,
+				EffectValue = amount,
+			};
+		}
+
 		public static Effect CreateStatIncreaseEffect(Stat stat, int amount)
 		{
 			return new Effect
@@ -99,24 +162,50 @@ namespace Data.Types
 		{
 			return (Type == EffectType.Boost || Type == EffectType.Rally);
 		}
+
+		public bool IsHealingEffect()
+		{
+			return (Type == EffectType.Heal || Type == EffectType.ConditionalHeal);
+		}
+
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Ability> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+
+			if (VsEpicOnly && (vsEpic == false))
+			{
+				return result;
+			}
+
+			var avg = ((Min + Max) / 2.0);
+			if (IsDamageEffect())
+			{
+				if (Type == EffectType.FlurryDamage)
+				{
+					avg *= EffectValue;
+				}
+				if (Type == EffectType.ConditionalDamage && enemyForce != null)
+				{
+					avg *= enemyForce.AvgNumOfUnitTypeAfterReinforcements(TargetType);
+				}
+
+				result.Damage += (avg * ParentAbilityProcChance);
+			}
+			if (IsHealingEffect())
+			{
+				if (Type == EffectType.ConditionalHeal && myForce != null)
+				{
+					avg *= myForce.AvgNumOfUnitTypeAfterReinforcements(TargetType);
+				}
+
+				result.Healing += (avg * ParentAbilityProcChance);
+			}
+			if (Type == EffectType.AntiHeal)
+			{
+				result.AntiHeal += (avg * ParentAbilityProcChance);
+			}
+
+			return result;
+		}
 	}
-
-	/*
-		Effect
-			Base (Epic Only)
-
-			* DamageEffect (Amount || Min, Max) [3, 7]
-			* FlurryDamageEffect (Amount || Min, Max, Count) [2, 6, 6]
-			HealEffect (Amount || Min, Max) [5, 10]
-			AntiHealEffect (Amount || Min, Max) [20]
-			* JamEfect (Type, Count) [Xeno, 2]
-			PreventJamEffect (Count) [2]
-			ControlEffect (Type, Count) [Assualt, 1]
-			ReinforceEffect (Type, Count) [Infantry, 4]
-			ConditionalDamageEffect(Type, Amount || Min, Max) [Armoured, 2, 4] (Jammed, Reinforced)
-			ConditionalHealEffect(Type, Amount || Min, Max) [Bloodthirsty, 1, 3]
-			* RallyEffect(Type, Amount) [Robotic, 1]
-			* BoostEffect(Type, Amount) [Robotic, 50%]
-			IncreaseStatEffect(Attack/Defense, Percentage) [Attack, 25%]
-	 */
 }

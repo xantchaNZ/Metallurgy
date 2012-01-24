@@ -141,5 +141,47 @@ namespace Data.Types
 
 			return boostAbilities;
 		}
+
+		public double AvgNumOfUnitTypeAfterReinforcements(Classification classification)
+		{
+			ResetCombat();
+
+			var units = GetUnits();
+			var baseUnits = units.Count(x => x.IsClassification(classification));
+			var reinforcedUnits = 0.0;
+			foreach (var unit in units)
+			{
+				foreach (var ability in unit.Abilities)
+				{
+					foreach (var effect in ability.Effects.Where(z => z.Type == EffectType.Reinforce && z.TargetType == classification))
+					{
+						reinforcedUnits += effect.ParentAbilityProcChance * effect.EffectValue;
+					}
+				}
+			}
+			//TODO: First level only, does not account for units that will reinforce after being brought in
+
+			return baseUnits + reinforcedUnits;
+		}
+
+		public List<Unit> ClaimReinforcements(Classification classification, int amount)
+		{
+			var bringingIn = new List<Unit>();
+			for (int i = 0; i < Reinforcements.Count && bringingIn.Count < amount; i++)
+			{
+				var reinforcement = Reinforcements[i];
+				if (reinforcement.Unit.IsClassification(classification) == false)
+				{
+					continue;
+				}
+
+				while (reinforcement.HasUnclaimedReinforcements() && bringingIn.Count < amount)
+				{
+					bringingIn.Add(reinforcement.ClaimReinforcement());
+				}
+			}
+
+			return bringingIn;
+		}
 	}
 }

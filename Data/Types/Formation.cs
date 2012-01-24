@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Data.Types.Enums;
 
 namespace Data.Types
@@ -27,39 +28,53 @@ namespace Data.Types
 			return string.Format("{0} [{1}-{2}-{3}-{4}]", Name, CommanderSlots, AssaultSlots, StructureSlots, VindicatorSlots);
 		}
 
-		public double CalculateAverageDamage(bool vsEpic = true)
+		/*
+			Damage (Flurry, Cond)
+			Heal (Cond)
+			Anti-Heal
+			Reinforce (Control)
+			Boost (Rally)
+		 */
+
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, bool vsEpic = true)
 		{
-			var total = 0.0;
+			var result = new CombatResult();
 
 			foreach (var ability in Abilities)
 			{
-				foreach (var effect in ability.Effects)
+				// Formations can never recieve Boosts
+				result.Add(ability.CalculateAverageDamage(myForce, enemyForce, null, vsEpic));
+			}
+
+			return result;
+		}
+
+		public double CalculateReinforcedDamage(Force force, List<Ability> boosts, bool vsEpic = true)
+		{
+			var total = 0.0;
+
+			foreach (var ability in Abilities.Where(x => x.HasEffect(EffectType.Reinforce)))
+			{
+				foreach (var effect in ability.GetEffects(EffectType.Reinforce))
 				{
-					if (effect.IsDamageEffect() == false || (effect.VsEpicOnly && (vsEpic == false)))
+					foreach (var unit in force.ClaimReinforcements(effect.TargetType, effect.EffectValue))
 					{
-						continue;
+						total += unit.CalculateBoostedDamage(boosts, vsEpic) * ability.ProcChance;
 					}
-
-					var avg = ((effect.Min + effect.Max) / 2.0);
-					if (effect.Type == EffectType.FlurryDamage)
-					{
-						avg *= effect.EffectValue;
-					}
-
-					total += (avg * ability.ProcChance);
 				}
 			}
 
-			return total;
+			return Math.Round(total, 2, MidpointRounding.AwayFromZero);
 		}
 
 		public double CalculateBoostToForce(Force force, bool vsEpic = true)
 		{
 			var bonus = 0.0;
 
+			var units = force.GetUnits();
 			foreach (var ability in Abilities)
 			{
-				foreach (var unit in force.GetUnits())
+				foreach (var unit in units)
 				{
 					bonus += unit.CalculateBoostBonus(ability);
 				}

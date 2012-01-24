@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Data.Types.Enums;
 
 namespace Data.Types
 {
@@ -39,6 +41,27 @@ namespace Data.Types
 			e.ParentAbilityProcChance = this.ProcChance;
 			Effects.Add(e);
 		}
+
+		public bool HasEffect(EffectType type)
+		{
+			return (Effects.Count(x => x.Type == type) > 0);
+		}
+
+		public List<Effect> GetEffects(EffectType type)
+		{
+			return Effects.Where(x => x.Type == type).ToList();
+		}
+
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Ability> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+			foreach (var effect in Effects)
+			{
+				result.Add(effect.CalculateAverageDamage(myForce, enemyForce, boosts, vsEpic));
+			}
+			return result;
+		}
+
 
 		public override string ToString()
 		{
