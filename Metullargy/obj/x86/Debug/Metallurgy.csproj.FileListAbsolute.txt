@@ -10,3 +10,15 @@ E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.MainForm.resources
 E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.Properties.Resources.resources
 E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.exe
 E:\Nico\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\bin\Debug\Metallurgy.exe.config
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.exe
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\bin\Debug\Metallurgy.exe
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\bin\Debug\Metallurgy.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\bin\Debug\Data.dll
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\bin\Debug\Data.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.MainForm.resources
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\Metallurgy.Properties.Resources.resources
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Work\Development\Metallurgy\Metallurgy\Metullargy\obj\x86\Debug\GenerateResource.write.1.tlog

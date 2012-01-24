@@ -13,3 +13,8 @@ E:\Nico\Metallurgy\Data\bin\Debug\Data.pdb
 E:\Nico\Metallurgy\Data\obj\Debug\ResolveAssemblyReference.cache
 E:\Nico\Metallurgy\Data\obj\Debug\Data.dll
 E:\Nico\Metallurgy\Data\obj\Debug\Data.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Development\Metallurgy\Metallurgy\Data\obj\Debug\Data.dll
+C:\Work\Development\Metallurgy\Metallurgy\Data\bin\Debug\Data.dll
+C:\Work\Development\Metallurgy\Metallurgy\Data\bin\Debug\Data.pdb
+C:\Work\Development\Metallurgy\Metallurgy\Data\obj\Debug\Data.pdb

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Linq;
@@ -9,10 +10,17 @@ namespace Data
 {
 	public class ObjectDatabase
 	{
-		private const string UnitsPath = @"E:\Nico\Metallurgy\units.txt";
-		private const string FormationsPath = @"E:\Nico\Metallurgy\formations.txt";
+		private const string UnitsPath = @"units.txt";
+		private const string FormationsPath = @"formations.txt";
+        private const string WorkPath = @"E:\Nico\Metallurgy\";
+        private const string HomePath = @"C:\Work\Development\Metallurgy\Metallurgy\";
 
-		public List<Unit> Units { get; set; }
+        private string GetPath(string path)
+        {
+            return string.Concat(Environment.MachineName.ToUpper() == "NICO-PC" ? HomePath : WorkPath, path);
+        }
+
+	    public List<Unit> Units { get; set; }
 		public List<Formation> Formations { get; set; }
 
 		private static ObjectDatabase _instance;
@@ -45,7 +53,7 @@ namespace Data
 		{
 			var serialiser = new JavaScriptSerializer();
 			var output = serialiser.Serialize(Units);
-			using (var fs = new FileStream(UnitsPath, FileMode.Create))
+            using (var fs = new FileStream(GetPath(UnitsPath), FileMode.Create))
 			{
 				fs.Write(Encoding.ASCII.GetBytes(output), 0, output.Length);
 			}
@@ -58,7 +66,7 @@ namespace Data
 			try
 			{
 				var text = "";
-				using (var sr = new StreamReader(UnitsPath))
+				using (var sr = new StreamReader(GetPath(UnitsPath)))
 				{
 					text = sr.ReadToEnd();
 				}
@@ -76,7 +84,7 @@ namespace Data
 		{
 			var serialiser = new JavaScriptSerializer();
 			var output = serialiser.Serialize(Formations);
-			using (var fs = new FileStream(FormationsPath, FileMode.Create))
+			using (var fs = new FileStream(GetPath(FormationsPath), FileMode.Create))
 			{
 				fs.Write(Encoding.ASCII.GetBytes(output), 0, output.Length);
 			}
@@ -89,7 +97,7 @@ namespace Data
 			try
 			{
 				var text = "";
-				using (var sr = new StreamReader(FormationsPath))
+				using (var sr = new StreamReader(GetPath(FormationsPath)))
 				{
 					text = sr.ReadToEnd();
 				}
