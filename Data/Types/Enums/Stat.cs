@@ -7,6 +7,7 @@ namespace Data.Types.Enums
 {
 	public enum Stat
 	{
+		None = 0,
 		Attack,
 		Defence
 	}

@@ -12,16 +12,22 @@ namespace Data
 	{
 		private const string UnitsPath = @"units.txt";
 		private const string FormationsPath = @"formations.txt";
-        private const string WorkPath = @"E:\Nico\Metallurgy\";
-        private const string HomePath = @"C:\Work\Development\Metallurgy\Metallurgy\";
+		private const string WorkPath = @"E:\Nico\Metallurgy\";
+		private const string HomePath = @"C:\Work\Development\Metallurgy\Metallurgy\";
 
-        private string GetPath(string path)
-        {
-            return string.Concat(Environment.MachineName.ToUpper() == "NICO-PC" ? HomePath : WorkPath, path);
-        }
+		private string GetPath(string path)
+		{
+			return string.Concat(Environment.MachineName.ToUpper() == "NICO-PC" ? HomePath : WorkPath, path);
+		}
 
-	    public List<Unit> Units { get; set; }
+		public List<Unit> Units { get; set; }
 		public List<Formation> Formations { get; set; }
+
+		private Dictionary<Guid, Unit> unitsById;
+		private Dictionary<string, Unit> unitsByName;
+
+		private Dictionary<Guid, Formation> formationsByID;
+		private Dictionary<string, Formation> formationsByName;
 
 		private static ObjectDatabase _instance;
 		public static ObjectDatabase Database
@@ -53,7 +59,7 @@ namespace Data
 		{
 			var serialiser = new JavaScriptSerializer();
 			var output = serialiser.Serialize(Units);
-            using (var fs = new FileStream(GetPath(UnitsPath), FileMode.Create))
+			using (var fs = new FileStream(GetPath(UnitsPath), FileMode.Create))
 			{
 				fs.Write(Encoding.ASCII.GetBytes(output), 0, output.Length);
 			}
@@ -73,6 +79,14 @@ namespace Data
 
 				var serialiser = new JavaScriptSerializer();
 				Units = serialiser.Deserialize<List<Unit>>(text);
+
+				unitsById = new Dictionary<Guid, Unit>();
+				unitsByName = new Dictionary<string, Unit>();
+				foreach (var unit in Units)
+				{
+					unitsById.Add(unit.ID, unit);
+					unitsByName.Add(unit.Name, unit);
+				}
 			}
 			catch
 			{
@@ -104,6 +118,14 @@ namespace Data
 
 				var serialiser = new JavaScriptSerializer();
 				Formations = serialiser.Deserialize<List<Formation>>(text);
+
+				formationsByID = new Dictionary<Guid, Formation>();
+				formationsByName = new Dictionary<string, Formation>();
+				foreach (var formation in Formations)
+				{
+					formationsByID.Add(formation.ID, formation);
+					formationsByName.Add(formation.Name, formation);
+				}
 			}
 			catch
 			{
@@ -113,26 +135,30 @@ namespace Data
 
 		public Unit GetUnitByName(string name)
 		{
-			try
-			{
-				return Units.Single(x => x.Name == name);
-			}
-			catch
-			{
-				return null;
-			}
+			return unitsByName.ContainsKey(name)
+			       	? unitsByName[name]
+			       	: null;
+		}
+
+		public Unit GetUnitByID(Guid id)
+		{
+			return unitsById.ContainsKey(id)
+					? unitsById[id]
+			       	: null;
 		}
 
 		public Formation GetFormationByName(string name)
 		{
-			try
-			{
-				return Formations.Single(x => x.Name == name);
-			}
-			catch
-			{
-				return null;
-			}
+			return formationsByName.ContainsKey(name)
+					? formationsByName[name]
+			       	: null;
+		}
+
+		public Formation GetFormationByID(Guid id)
+		{
+			return formationsByID.ContainsKey(id)
+					? formationsByID[id]
+			       	: null;
 		}
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using Data.Types.Enums;
 
 namespace Data.Types
@@ -28,14 +29,6 @@ namespace Data.Types
 			return string.Format("{0} [{1}-{2}-{3}-{4}]", Name, CommanderSlots, AssaultSlots, StructureSlots, VindicatorSlots);
 		}
 
-		/*
-			Damage (Flurry, Cond)
-			Heal (Cond)
-			Anti-Heal
-			Reinforce (Control)
-			Boost (Rally)
-		 */
-
 		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, bool vsEpic = true)
 		{
 			var result = new CombatResult();
@@ -49,34 +42,37 @@ namespace Data.Types
 			return result;
 		}
 
-		public double CalculateReinforcedDamage(Force force, List<Ability> boosts, bool vsEpic = true)
+		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
-			var total = 0.0;
+			var result = new CombatResult();
 
 			foreach (var ability in Abilities.Where(x => x.HasEffect(EffectType.Reinforce)))
 			{
-				foreach (var effect in ability.GetEffects(EffectType.Reinforce))
-				{
-					foreach (var unit in force.ClaimReinforcements(effect.TargetType, effect.EffectValue))
-					{
-						total += unit.CalculateBoostedDamage(boosts, vsEpic) * ability.ProcChance;
-					}
-				}
+				result.Add(ability.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
 			}
 
-			return Math.Round(total, 2, MidpointRounding.AwayFromZero);
+			return result;
 		}
 
-		public double CalculateBoostToForce(Force force, bool vsEpic = true)
+		public CombatResult CalculateTotalDamageContribution(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+
+			result.Add(this.CalculateAverageDamage(myForce, enemyForce, vsEpic));
+			result.Add(this.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+
+			return result;
+		}
+
+		public double CalculateBoostToForce(Force myForce, Force enemyForce, bool vsEpic = true)
 		{
 			var bonus = 0.0;
 
-			var units = force.GetUnits();
 			foreach (var ability in Abilities)
 			{
-				foreach (var unit in units)
+				foreach (var unit in myForce.GetUnits()) // TODO: Get this to count Reinforced units
 				{
-					bonus += unit.CalculateBoostBonus(ability);
+					bonus += unit.CalculateBoostBonus(myForce, enemyForce, ability, vsEpic);
 				}
 			}
 

@@ -32,6 +32,11 @@ Calculate stam costs to hit caps in epics
  * TODO:
 Healing
 Plug in Vindicators
+ * 
+ * Think about how to handle boost effect that are reinforced in.
+ * Tidy up Unit Calculations
+ * Build Report to check calcs are working
+ * 
 */
 	
 		public MainForm()
@@ -52,14 +57,14 @@ Plug in Vindicators
 				Formation = rageVindi
 			};
 
-			var riggsDmg = riggs.CalculateAverageDamage(true);
-			var pwNDmg = pw.CalculateAverageDamage(false);
-			var pwEDmg = pw.CalculateAverageDamage(true);
-			var mtDmg = mt.CalculateAverageDamage(true);
-			var omegaDmg = omega.CalculateAverageDamage(true);
+			var riggsDmg = riggs.CalculateAverageDamage(force, null, null, true);
+			var pwNDmg = pw.CalculateAverageDamage(force, null, null, false);
+			var pwEDmg = pw.CalculateAverageDamage(force, null, null, true);
+			var mtDmg = mt.CalculateAverageDamage(force, null, null, true);
+			var omegaDmg = omega.CalculateAverageDamage(force, null, null, true);
 
-			var omegaBoost = pw.CalculateBoostBonus(omega.Abilities[0], true);
-			var mtBoost = mt.CalculateBoostBonus(rageVindi.Abilities[0], true);
+			var omegaBoost = pw.CalculateBoostBonus(force, null, omega.Abilities[0], true);
+			var mtBoost = mt.CalculateBoostBonus(force, null, rageVindi.Abilities[0], true);
 
 			force.AddUnit(riggs);
 			force.AddUnit(riggs);
@@ -72,24 +77,20 @@ Plug in Vindicators
 			force.AddReinforcement(pw, 2);
 
 			var boosts = force.GetBoostAbilities();
-			var poweredPW = pw.CalculateBoostedDamage(boosts, true);
+			var poweredPW = pw.CalculateAverageDamage(force, null, boosts, true); // This is counting the vs epic & vs non-epic twice for rallys
 
-			var beoBonus = beowulf.CalculateBoostToForce(force);
-			var rvBonus = rageVindi.CalculateBoostToForce(force);
-			var omegaBonus = omega.CalculateBoostToForce(force);
+			// These don't count reinforcements from Riggs
+			var beoBonus = beowulf.CalculateBoostToForce(force, null, true);
+			var rvBonus = rageVindi.CalculateBoostToForce(force, null, true);
+			var omegaBonus = omega.CalculateBoostToForce(force, null, true);
 
-			var riggsReinf = riggs.CalculateReinforcedDamage(force.Reinforcements, true);
-
-			force.ResetCombat();
-			var riggsTotal = riggs.CalculateTotalBoostedDamage(force, true);
+			var riggsReinf = riggs.CalculateReinforcedDamage(force, null, boosts, true);
 
 			force.ResetCombat();
-			var forceDmg = force.CalculateAverageForceDamage(true);
+			var riggsTotal = riggs.CalculateTotalDamageContribution(force, null, boosts, true);
 
-			// Do Reinforcements, etc
-			// Do Healing, Jam
-			// Do Unit storage system
-			// Do Reports
+			force.ResetCombat();
+			var forceDmg = force.CalculateAverageForceDamage(null, true);
 
 			database.Units.Where(x => database.Formations.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());
 			database.Formations.Where(x => database.Formations.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());

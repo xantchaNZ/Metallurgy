@@ -36,15 +36,28 @@ namespace Data.Types
 			}
 		}
 
+		public override string ToString()
+		{
+			return string.Format("{0} ({1}%)", Name, ProcChance * 100);
+		}
+
 		public void AddEffect(Effect e)
 		{
 			e.ParentAbilityProcChance = this.ProcChance;
 			Effects.Add(e);
 		}
 
+		public void EnsureEffectProcs()
+		{
+			foreach (var effect in Effects)
+			{
+				effect.ParentAbilityProcChance = ProcChance;
+			}
+		}
+
 		public bool HasEffect(EffectType type)
 		{
-			return (Effects.Count(x => x.Type == type) > 0);
+			return (GetEffects(type).Count > 0);
 		}
 
 		public List<Effect> GetEffects(EffectType type)
@@ -52,8 +65,10 @@ namespace Data.Types
 			return Effects.Where(x => x.Type == type).ToList();
 		}
 
-		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Ability> boosts, bool vsEpic = true)
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
+			EnsureEffectProcs();
+
 			var result = new CombatResult();
 			foreach (var effect in Effects)
 			{
@@ -62,10 +77,33 @@ namespace Data.Types
 			return result;
 		}
 
-
-		public override string ToString()
+		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
-			return string.Format("{0} ({1}%)", Name, ProcChance * 100);
+			EnsureEffectProcs();
+
+			var result = new CombatResult();
+
+			if (HasEffect(EffectType.Reinforce) == false)
+			{
+				return result;
+			}
+
+			foreach (var effect in GetEffects(EffectType.Reinforce))
+			{
+				result.Add(effect.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+			}
+
+			return result;
+		}
+
+		public CombatResult CalculateTotalDamageContribution(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+
+			result.Add(this.CalculateAverageDamage(myForce, enemyForce, boosts, vsEpic));
+			result.Add(this.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+
+			return result;
 		}
 	}
 }

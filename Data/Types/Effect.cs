@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Data.Types.Enums;
 
 namespace Data.Types
@@ -16,6 +17,8 @@ namespace Data.Types
 		public Stat Stat { get; set; }
 		
 		public double ParentAbilityProcChance { get; set; }
+
+		#region Effect Factories
 
 		public static Effect CreateDamageEffect(int min, int max, bool vsEpic)
 		{
@@ -153,6 +156,8 @@ namespace Data.Types
 			};
 		}
 
+		#endregion
+
 		public bool IsDamageEffect()
 		{
 			return (Type == EffectType.Damage || Type == EffectType.FlurryDamage || Type == EffectType.ConditionalDamage);
@@ -168,7 +173,8 @@ namespace Data.Types
 			return (Type == EffectType.Heal || Type == EffectType.ConditionalHeal);
 		}
 
-		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Ability> boosts, bool vsEpic = true)
+		// boosts is populated with only effects that can boost the source abilities unit
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
 			var result = new CombatResult();
 
@@ -177,7 +183,7 @@ namespace Data.Types
 				return result;
 			}
 
-			var avg = ((Min + Max) / 2.0);
+			var avg = ((Min + Max)/2.0);
 			if (IsDamageEffect())
 			{
 				if (Type == EffectType.FlurryDamage)
@@ -189,7 +195,14 @@ namespace Data.Types
 					avg *= enemyForce.AvgNumOfUnitTypeAfterReinforcements(TargetType);
 				}
 
-				result.Damage += (avg * ParentAbilityProcChance);
+				result.Damage += (avg*ParentAbilityProcChance);
+
+				// Apply Percentile Boosts
+				foreach (var boostEffect in boosts.Where(x => x.Type == EffectType.Boost))
+				{
+					var boostBonus = 1 + (boostEffect.ParentAbilityProcChance*(boostEffect.EffectValue*0.01));
+					result.Damage *= boostBonus;
+				}
 			}
 			if (IsHealingEffect())
 			{
@@ -198,11 +211,35 @@ namespace Data.Types
 					avg *= myForce.AvgNumOfUnitTypeAfterReinforcements(TargetType);
 				}
 
-				result.Healing += (avg * ParentAbilityProcChance);
+				result.Healing += (avg*ParentAbilityProcChance);
 			}
 			if (Type == EffectType.AntiHeal)
 			{
-				result.AntiHeal += (avg * ParentAbilityProcChance);
+				result.AntiHeal += (avg*ParentAbilityProcChance);
+			}
+
+			// Apply Rally Effects
+			foreach (var rallyEffect in boosts.Where(x => x.Type == EffectType.Rally))
+			{
+				var abilBonus = rallyEffect.ParentAbilityProcChance * rallyEffect.EffectValue * this.ParentAbilityProcChance;
+				if (this.Type == EffectType.FlurryDamage)
+				{
+					abilBonus *= this.EffectValue;
+				}
+				result.Damage += abilBonus;
+			}
+
+			return result;
+		}
+
+		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic)
+		{
+			var result = new CombatResult();
+
+			foreach (var unit in myForce.ClaimReinforcements(TargetType, EffectValue))
+			{
+				// Add each reinforced units total average damage potential (including reinforcements it might bring in too)
+				result.Add(unit.CalculateTotalDamageContribution(myForce, enemyForce, boosts, vsEpic).AdjustToProcChance(ParentAbilityProcChance));
 			}
 
 			return result;

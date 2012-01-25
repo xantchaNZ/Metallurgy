@@ -109,15 +109,15 @@ namespace Data.Types
 			Jammed = new List<Unit>();
 		}
 
-		public double CalculateAverageForceDamage(bool vsEpic)
+		public CombatResult CalculateAverageForceDamage(Force enemy, bool vsEpic)
 		{
-			var total = 0.0;
+			var total = new CombatResult();
 			foreach (var unit in GetUnits())
 			{
-				total += unit.CalculateTotalBoostedDamage(this, vsEpic);
+				total.Add(unit.CalculateTotalDamageContribution(this, enemy, this.GetBoostAbilities(), vsEpic));
 			}
 
-			return Math.Round(total, 2, MidpointRounding.AwayFromZero);
+			return total;
 		}
 
 		public List<Unit> GetUnits()
@@ -130,16 +130,25 @@ namespace Data.Types
 			return units;
 		}
 
-		public List<Ability> GetBoostAbilities()
+		public List<Effect> GetBoostAbilities()
 		{
-			var boostAbilities = new List<Ability>();
-			boostAbilities.AddRange(Formation.Abilities.Where(x => x.Effects.Count(effect => effect.IsBoostEffect()) > 0));
+			// TODO: Make this check for boosts in reinforcements?
+			var boostEffects = new List<Effect>();
+			foreach (var ability in Formation.Abilities)
+			{
+				boostEffects.AddRange(ability.GetEffects(EffectType.Rally));
+				boostEffects.AddRange(ability.GetEffects(EffectType.Boost));
+			}
 			foreach (var unit in GetUnits())
 			{
-				boostAbilities.AddRange(unit.Abilities.Where(x => x.Effects.Count(effect => effect.IsBoostEffect()) > 0));
+				foreach (var ability in unit.Abilities)
+				{
+					boostEffects.AddRange(ability.GetEffects(EffectType.Rally));
+					boostEffects.AddRange(ability.GetEffects(EffectType.Boost));
+				}
 			}
 
-			return boostAbilities;
+			return boostEffects;
 		}
 
 		public double AvgNumOfUnitTypeAfterReinforcements(Classification classification)
@@ -182,6 +191,29 @@ namespace Data.Types
 			}
 
 			return bringingIn;
+		}
+
+		public string ForceReport()
+		{
+			/*
+			Force [404.8]
+			Commanders
+			FM Riggs [14.8]
+			 * Base [2.5]
+			 * Reinforced - Photon Walker x2 @ 50% [0.5 * (12.3 + 12.3)] = [12.3]
+				Photon Walker [12.3]
+					* Base 9.0
+					+ Omega Boost 2.7
+					+ Beowulf Rally 0.3
+					+ Rage Vindicator Rally 0.3
+				Photon Walker [12.3]
+					* Base 9.0
+					+ Omega Boost 2.7
+					+ Beowulf Rally 0.3
+					+ Rage Vindicator Rally 0.3
+			*/
+
+			return "";
 		}
 	}
 }

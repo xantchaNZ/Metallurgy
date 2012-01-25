@@ -38,101 +38,61 @@ namespace Data.Types
 			return Classifications.Contains(classification);
 		}
 
-		public double CalculateAverageDamage(bool vsEpic = true)
+		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
-			var total = 0.0;
+			var result = new CombatResult();
+
+			var useableBoosts = new List<Effect>();
+			if(boosts != null)
+			{
+				useableBoosts.AddRange(boosts.Where(effect => effect.IsBoostEffect() && this.IsClassification(effect.TargetType)).ToList());
+			}
+			foreach (var ability in Abilities)
+			{
+				result.Add(ability.CalculateAverageDamage(myForce, enemyForce, useableBoosts, vsEpic));
+			}
+
+			return result;
+		}
+
+		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+
+			foreach (var ability in Abilities.Where(x => x.HasEffect(EffectType.Reinforce)))
+			{
+				result.Add(ability.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+			}
+
+			return result;
+		}
+
+		public CombatResult CalculateTotalDamageContribution(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		{
+			var result = new CombatResult();
+
+			result.Add(this.CalculateAverageDamage(myForce, enemyForce, boosts, vsEpic));
+			result.Add(this.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+
+			return result;
+		}
+
+		public double CalculateBoostToForce(Force myForce, Force enemyForce, bool vsEpic = true)
+		{
+			var bonus = 0.0;
 
 			foreach (var ability in Abilities)
 			{
-				foreach (var effect in ability.Effects.Where(x => x.IsDamageEffect()))
+				foreach (var unit in myForce.GetUnits()) // TODO: Get this to count Reinforced units
 				{
-					if ((effect.VsEpicOnly && (vsEpic == false)))
-					{
-						continue;
-					}
-
-					var avg = ((effect.Min + effect.Max) / 2.0);
-					if (effect.Type == EffectType.FlurryDamage)
-					{
-						avg *= effect.EffectValue;
-					}
-
-					total += (avg * ability.ProcChance);
+					bonus += unit.CalculateBoostBonus(myForce, enemyForce, ability, vsEpic);
 				}
 			}
 
-			return total;
+			return Math.Round(bonus, 2, MidpointRounding.AwayFromZero);
 		}
 
-		public double CalculateReinforcedDamage(List<Reinforcement> reinforcements, bool vsEpic = true)
-		{
-			var total = 0.0;
-
-			foreach (var ability in Abilities)
-			{
-				foreach (var effect in ability.Effects.Where(x => x.Type == EffectType.Reinforce))
-				{
-					var bringingIn = new List<Unit>();
-					for (int i = 0; i < reinforcements.Count && bringingIn.Count < effect.EffectValue; i++)
-					{
-						var reinforcement = reinforcements[i];
-						if (reinforcement.Unit.IsClassification(effect.TargetType) == false)
-						{
-							continue;
-						}
-
-						while (reinforcement.HasUnclaimedReinforcements() && bringingIn.Count < effect.EffectValue)
-						{
-							bringingIn.Add(reinforcement.ClaimReinforcement());
-						}
-					}
-
-
-					foreach (var unit in bringingIn)
-					{
-						total += unit.CalculateAverageDamage(vsEpic) * ability.ProcChance;
-					}
-				}
-			}
-
-			return Math.Round(total, 2, MidpointRounding.AwayFromZero);
-		}
-
-		public double CalculateBoostedReinforcedDamage(List<Reinforcement> reinforcements, List<Ability> boostAbilities, bool vsEpic = true)
-		{
-			var total = 0.0;
-
-			foreach (var ability in Abilities)
-			{
-				foreach (var effect in ability.Effects.Where(x => x.Type == EffectType.Reinforce))
-				{
-					var bringingIn = new List<Unit>();
-					for (int i = 0; i < reinforcements.Count && bringingIn.Count < effect.EffectValue; i++)
-					{
-						var reinforcement = reinforcements[i];
-						if (reinforcement.Unit.IsClassification(effect.TargetType) == false)
-						{
-							continue;
-						}
-
-						while (reinforcement.HasUnclaimedReinforcements() && bringingIn.Count < effect.EffectValue)
-						{
-							bringingIn.Add(reinforcement.ClaimReinforcement());
-						}
-					}
-
-
-					foreach (var unit in bringingIn)
-					{
-						total += unit.CalculateBoostedDamage(boostAbilities, vsEpic) * ability.ProcChance;
-					}
-				}
-			}
-
-			return Math.Round(total, 2, MidpointRounding.AwayFromZero);
-		}
-
-		public double CalculateBoostBonus(Ability boostAbility, bool vsEpic = true)
+		public double CalculateBoostBonus(Force myForce, Force enemyForce, Ability boostAbility, bool vsEpic = true)
 		{
 			// Find all effects that can boost this unit
 			var effects = boostAbility.Effects.Where(effect => effect.IsBoostEffect() && IsClassification(effect.TargetType)).ToList();
@@ -148,7 +108,7 @@ namespace Data.Types
 				if (boostEffect.Type == EffectType.Boost)
 				{
 					var boostBonus = (boostEffect.ParentAbilityProcChance * (boostEffect.EffectValue * 0.01));
-					bonus += (CalculateAverageDamage(vsEpic) * boostBonus);
+					bonus += (CalculateAverageDamage(myForce, enemyForce, null, vsEpic).Damage * boostBonus);
 				}
 
 				if (boostEffect.Type == EffectType.Rally)
@@ -157,7 +117,7 @@ namespace Data.Types
 					{
 						var abilBonus = boostEffect.ParentAbilityProcChance * boostEffect.EffectValue * unitAbility.ProcChance;
 						var flurryEffects = unitAbility.Effects.Where(x => x.Type == EffectType.FlurryDamage).ToList();
-						if(flurryEffects.Count > 0)
+						if (flurryEffects.Count > 0)
 						{
 							var baseBonus = abilBonus;
 							abilBonus = 0;
@@ -174,70 +134,6 @@ namespace Data.Types
 			return Math.Round(bonus, 2, MidpointRounding.AwayFromZero);
 		}
 
-		public double CalculateBoostedDamage(List<Ability> boostAbilities, bool vsEpic = true)
-		{
-			// Find all Boost effects & apply them multiplicatively
-			// Then find and apply all rally effects
 
-			var damage = CalculateAverageDamage(vsEpic);
-			var boostEffects = new List<Effect>();
-
-			foreach (var ability in boostAbilities)
-			{
-				boostEffects.AddRange(ability.Effects.Where(effect => effect.IsBoostEffect() && IsClassification(effect.TargetType)).ToList());
-			}
-
-			foreach (var boostEffect in boostEffects.Where(x => x.Type == EffectType.Boost))
-			{
-				var boostBonus = 1 + (boostEffect.ParentAbilityProcChance * (boostEffect.EffectValue * 0.01));
-				damage *= boostBonus;
-			}
-
-			foreach (var boostEffect in boostEffects.Where(x => x.Type == EffectType.Rally))
-			{
-				foreach (var unitAbility in Abilities)
-				{
-					var abilBonus = boostEffect.ParentAbilityProcChance * boostEffect.EffectValue * unitAbility.ProcChance;
-					var flurryEffects = unitAbility.Effects.Where(x => x.Type == EffectType.FlurryDamage).ToList();
-					if (flurryEffects.Count > 0)
-					{
-						var baseBonus = abilBonus;
-						abilBonus = 0;
-						foreach (var flurryEffect in flurryEffects)
-						{
-							abilBonus += baseBonus * flurryEffect.EffectValue;
-						}
-					}
-					damage += abilBonus;
-				}
-			}
-
-			return Math.Round(damage, 2, MidpointRounding.AwayFromZero);
-		}
-
-		public double CalculateTotalBoostedDamage(Force force, bool vsEpic = true)
-		{
-			var boostAbilities = force.GetBoostAbilities();
-
-			var baseValue = CalculateBoostedDamage(boostAbilities, vsEpic);
-			var reinforcementsValue = CalculateBoostedReinforcedDamage(force.Reinforcements, boostAbilities, vsEpic);
-
-			return Math.Round(baseValue + reinforcementsValue, 2, MidpointRounding.AwayFromZero);
-		}
-
-		public double CalculateBoostToForce(Force force, bool vsEpic = true)
-		{
-			var bonus = 0.0;
-
-			foreach (var ability in Abilities)
-			{
-				foreach (var unit in force.GetUnits())
-				{
-					bonus += unit.CalculateBoostBonus(ability);
-				}
-			}
-
-			return Math.Round(bonus, 2, MidpointRounding.AwayFromZero);
-		}
 	}
 }
