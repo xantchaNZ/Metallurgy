@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Data
 {
@@ -13,6 +14,43 @@ namespace Data
 			Damage = 0.0;
 			Healing = 0.0;
 			AntiHeal = 0.0;
+		}
+
+		public override string ToString()
+		{
+			return string.Format("{0} Damage, {1} Healing, {2} Healing Prevented", Damage.ToString("N1"), Healing.ToString("N1"), AntiHeal.ToString("N1"));
+		}
+
+		public string ToSimpleString()
+		{
+			if (DoneAnything() == false)
+			{
+				return "0.0";
+			}
+
+			var sb = new StringBuilder();
+			var seperator = "";
+			if (Damage > 0)
+			{
+				sb.AppendFormat("{0}{1}", seperator, Damage.ToString("N1"));
+				seperator = ", ";
+			}
+			if (Healing > 0)
+			{
+				sb.AppendFormat("{0}{1}H", seperator, Healing.ToString("N1"));
+				seperator = ", ";
+			}
+			if (AntiHeal > 0)
+			{
+				sb.AppendFormat("{0}{1}AH", seperator, AntiHeal.ToString("N1"));
+			}
+
+			return sb.ToString();
+		}
+
+		public bool DoneAnything()
+		{
+			return (Damage > 0.01 || Healing > 0.01 || AntiHeal > 0.01);
 		}
 
 		public void Add(CombatResult other)
@@ -31,5 +69,5 @@ namespace Data
 				AntiHeal = Math.Round(this.AntiHeal * procRate, 2, MidpointRounding.AwayFromZero),
 			};
 		}
-	}
+ 	}
 }

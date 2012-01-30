@@ -28,20 +28,37 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.ForceReportTextBox = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
-			// Form1
+			// ForceReportTextBox
+			// 
+			this.ForceReportTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ForceReportTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ForceReportTextBox.Location = new System.Drawing.Point(0, 0);
+			this.ForceReportTextBox.Multiline = true;
+			this.ForceReportTextBox.Name = "ForceReportTextBox";
+			this.ForceReportTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.ForceReportTextBox.Size = new System.Drawing.Size(464, 701);
+			this.ForceReportTextBox.TabIndex = 0;
+			// 
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(365, 242);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(464, 701);
+			this.Controls.Add(this.ForceReportTextBox);
+			this.Name = "MainForm";
+			this.Text = "Force Report";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
+
+		private System.Windows.Forms.TextBox ForceReportTextBox;
 	}
 }
 

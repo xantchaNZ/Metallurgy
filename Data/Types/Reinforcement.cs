@@ -1,11 +1,15 @@
-﻿namespace Data.Types
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Data.Types
 {
 	public class Reinforcement
 	{
 		public Unit Unit { get; private set; }
 		public int NumAvailable { get; private set; }
 
-		private int numClaimed;
+		private Dictionary<Guid, int> claimed;
 
 		public Reinforcement(Unit unit, int numAvailable)
 		{
@@ -15,28 +19,47 @@
 
 		public void Reset()
 		{
-			numClaimed = 0;
+			claimed = new Dictionary<Guid, int>();
 		}
 
-		public Unit ClaimReinforcement()
+		public Unit ClaimReinforcement(Guid claimerID)
 		{
 			if (HasUnclaimedReinforcements() == false)
 			{
 				return null;
 			}
 
-			numClaimed++;
+			if (claimed.ContainsKey(claimerID))
+			{
+				claimed[claimerID]++;
+			}
+			else
+			{
+				claimed.Add(claimerID, 1);
+			}
 			return Unit;
 		}
+
+		private int NumClaimed { get { return claimed.Values.Sum(); } }
 		
 		public bool HasUnclaimedReinforcements()
 		{
-			return ((NumAvailable - numClaimed) > 0);
+			return (NumClaimed > 0);
 		}
 
 		public override string ToString()
 		{
-			return string.Format("{0} x{1} {2}", Unit.Name, NumAvailable, numClaimed == 0 ? "" : string.Format("({0} Claimed)", numClaimed));
+			return string.Format("{0} x{1} {2}", Unit.Name, NumAvailable, NumClaimed == 0 ? "" : string.Format("({0} Claimed)", NumClaimed));
+		}
+
+		public int GetCountClaimedBy(Guid claimerID)
+		{
+			if(claimed.ContainsKey(claimerID) == false)
+			{
+				return 0;
+			}
+
+			return claimed[claimerID];
 		}
 	}
 }

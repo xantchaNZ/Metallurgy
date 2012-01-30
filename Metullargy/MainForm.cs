@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Linq;
 using Data;
 using Data.Types;
 using Data.Types.Enums;
@@ -10,39 +8,72 @@ namespace Metallurgy
 {
 	public partial class MainForm : Form
 	{
-/*
-	****************
-	*  METULLARGY  *
-	****************
+		/*
+			****************
+			*  METULLARGY  *
+			****************
 
-Tool that will
-Be a unit Database
- * Searching, sorting, groups etc
-Show Unit Rankings
- * Show total unit average damages
- * Show unit potential damages
- * Calculate true rally value for rally units
- * Calculate true boost value for boost units
- * Calculate bonuses towards heal pervention, damage prevention for epics, AV, typhon etc)
-Allow you to drag and drop build forces
-Run test attacks vs epics (test ratios etc etc) Test Hits
-Calculate, DMG per stam, ratios etc for forces
-Calculate stam costs to hit caps in epics
+		Tool that will
+		Be a unit Database
+		 * Searching, sorting, groups etc
+		Show Unit Rankings
+		 * Show total unit average damages
+		 * Show unit potential damages
+		 * Calculate true rally value for rally units
+		 * Calculate true boost value for boost units
+		 * Calculate bonuses towards heal prevention, damage prevention for epics, AV, typhon etc)
+		Allow you to drag and drop build forces
+		Run test attacks vs epics (test ratios etc etc) Test Hits
+		Calculate, DMG per stam, ratios etc for forces
+		Calculate stam costs to hit caps in epics
 
- * TODO:
-Healing
-Plug in Vindicators
- * 
- * Think about how to handle boost effect that are reinforced in.
- * Tidy up Unit Calculations
- * Build Report to check calcs are working
- * 
-*/
-	
+		 * TODO:
+		 * 
+		 * Think about how to handle boost effect that are reinforced in.
+		 * Put "Unit Tests" In
+		 * 
+		 * Fix Riggs - Reinforcements for Reports
+		 * Fix Mammoth Tank Boost reporting
+		 * Add contraction for multiple units of same type
+		 * 
+		*/
+
+		private ObjectDatabase database;
+
 		public MainForm()
 		{
 			InitializeComponent();
 
+			database = ObjectDatabase.Database;
+			var pw = database.GetUnitByName("Photon Walker");
+
+			var force = new Force
+			{
+				Name = "Robots Test",
+				Formation = database.GetFormationByName("Rage Vindicator")
+			};
+
+			force.AddUnit(database.GetUnitByName("Field Marshall Riggs"));
+			for (var i = 0; i < force.Formation.AssaultSlots - 1; i++)
+				force.AddUnit(pw);
+			force.AddUnit(database.GetUnitByName("Mammoth Tank"));
+			force.AddUnit(database.GetUnitByName("Beowulf Cluster"));
+			force.AddUnit(database.GetUnitByName("Omega, Machine of War"));
+
+			force.AddReinforcement(pw, 2);
+
+			var enemy = new Force
+			{
+				Name = "Dummy",
+				IsEpicBoss = true
+			};
+
+			ForceReportTextBox.Text = force.ForceReport(enemy);
+			ForceReportTextBox.SelectionStart = ForceReportTextBox.Text.Length;
+		}
+
+		private void RunTests()
+		{
 			var database = ObjectDatabase.Database;
 			var riggs = database.GetUnitByName("Field Marshall Riggs");
 			var pw = database.GetUnitByName("Photon Walker");
@@ -63,8 +94,8 @@ Plug in Vindicators
 			var mtDmg = mt.CalculateAverageDamage(force, null, null, true);
 			var omegaDmg = omega.CalculateAverageDamage(force, null, null, true);
 
-			var omegaBoost = pw.CalculateBoostBonus(force, null, omega.Abilities[0], true);
-			var mtBoost = mt.CalculateBoostBonus(force, null, rageVindi.Abilities[0], true);
+			var omegaBoost = pw.CalculateBoostBonus(force, null, omega.Abilities[0].Effects[0], true);
+			var mtBoost = mt.CalculateBoostBonus(force, null, rageVindi.Abilities[0].Effects[0], true);
 
 			force.AddUnit(riggs);
 			force.AddUnit(riggs);
@@ -88,18 +119,23 @@ Plug in Vindicators
 
 			force.ResetCombat();
 			var riggsTotal = riggs.CalculateTotalDamageContribution(force, null, boosts, true);
+			var pwTotal = pw.CalculateTotalDamageContribution(force, null, boosts, true);
+			var mtTotal = mt.CalculateTotalDamageContribution(force, null, boosts, true);
+			var beowulfTotal = beowulf.CalculateTotalDamageContribution(force, null, boosts, true);
+			var omegaTotal = omega.CalculateTotalDamageContribution(force, null, boosts, true);
 
 			force.ResetCombat();
-			var forceDmg = force.CalculateAverageForceDamage(null, true);
-
-			database.Units.Where(x => database.Formations.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());
-			database.Formations.Where(x => database.Formations.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());
-			database.Save();
+			var enemy = new Force
+			{
+				Name = "Dummy",
+				IsEpicBoss = true
+			};
+			var forceDmg = force.CalculateAverageForceDamage(enemy);
 		}
 
 		private void SeedDatabase()
 		{
-			var rageVindi = new Formation
+			/*var rageVindi = new Formation
 			{
 				Name = "Rage Vindicator",
 				CommanderSlots = 10,
@@ -110,7 +146,7 @@ Plug in Vindicators
 				{
 					new Ability("RAAAAGEE!", 0.50, Effect.CreateRallyEffect(Classification.Assault, 1))
 				},
-			};
+			};*/
 
 			var riggs = new Unit
 			{
@@ -141,6 +177,9 @@ Plug in Vindicators
 				Source = "Cataclysm Drop: 33% at 160k Tier, 33% at 280k Tier"
 			};
 
+		    var effect = Effect.CreateDamageEffect(2, 6, vsEpic: false);
+		    effect.MinBonusVsEpic = 6;
+		    effect.MaxBonusVsEpic = 16;
 			var pw = new Unit
 			{
 				Name = "Photon Walker",
@@ -151,7 +190,7 @@ Plug in Vindicators
 				IsEpicBossForceUnit = false,
 				Abilities = new List<Ability>
 				{
-					new Ability("Quantize", 0.60, Effect.CreateDamageEffect(2, 6, vsEpic: false), Effect.CreateDamageEffect(6, 16, vsEpic: true)),
+					new Ability("Quantize", 0.60, effect),
 				},
 				Source = "Cataclysm Drop: 33% at 160k Tier, 33% at 280k Tier"
 			};
@@ -210,8 +249,13 @@ Plug in Vindicators
 			database.Units.Add(mt);
 			database.Units.Add(beowulf);
 			database.Units.Add(omega);
-			database.Formations.Add(rageVindi);
+			//database.Formations.Add(rageVindi);
 
+			database.Save();
+		}
+
+		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
 			database.Save();
 		}
 	}

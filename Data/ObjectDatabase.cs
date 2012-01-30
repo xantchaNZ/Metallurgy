@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using System.Linq;
 using System.Web.Script.Serialization;
+
 using Data.Types;
 
 namespace Data
@@ -57,6 +58,8 @@ namespace Data
 
 		private void SaveUnits()
 		{
+            Units.Where(x => Units.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());
+
 			var serialiser = new JavaScriptSerializer();
 			var output = serialiser.Serialize(Units);
 			using (var fs = new FileStream(GetPath(UnitsPath), FileMode.Create))
@@ -96,6 +99,8 @@ namespace Data
 
 		private void SaveFormations()
 		{
+            Formations.Where(x => Formations.Count(y => y.ID == x.ID) > 1).ToList().ForEach(x => x.ID = Guid.NewGuid());
+
 			var serialiser = new JavaScriptSerializer();
 			var output = serialiser.Serialize(Formations);
 			using (var fs = new FileStream(GetPath(FormationsPath), FileMode.Create))

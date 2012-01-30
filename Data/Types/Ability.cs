@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Data.Types.Enums;
 
@@ -68,16 +69,36 @@ namespace Data.Types
 		public CombatResult CalculateAverageDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
 			EnsureEffectProcs();
-
+ 
 			var result = new CombatResult();
 			foreach (var effect in Effects)
 			{
 				result.Add(effect.CalculateAverageDamage(myForce, enemyForce, boosts, vsEpic));
 			}
+
+            // Apply Rally Effects - Rally will only work once for each ability and will affect abilities which deal no damage
+			if (boosts != null)
+			{
+				foreach (var rallyEffect in boosts.Where(x => x.Type == EffectType.Rally))
+				{
+					var abilBonus = rallyEffect.ParentAbilityProcChance*rallyEffect.EffectValue*this.ProcChance;
+					if (HasEffect(EffectType.FlurryDamage))
+					{
+						var baseBonus = abilBonus;
+						abilBonus = 0;
+						foreach (var effect in GetEffects(EffectType.FlurryDamage))
+						{
+							abilBonus += baseBonus*effect.EffectValue;
+						}
+					}
+					result.Damage += abilBonus;
+				}
+			}
+
 			return result;
 		}
 
-		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		public CombatResult CalculateReinforcedDamage(Guid claimerID, Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
 			EnsureEffectProcs();
 
@@ -90,18 +111,18 @@ namespace Data.Types
 
 			foreach (var effect in GetEffects(EffectType.Reinforce))
 			{
-				result.Add(effect.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+				result.Add(effect.CalculateReinforcedDamage(claimerID, myForce, enemyForce, boosts, vsEpic));
 			}
 
 			return result;
 		}
 
-		public CombatResult CalculateTotalDamageContribution(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
+		public CombatResult CalculateTotalDamageContribution(Guid claimerID, Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
 			var result = new CombatResult();
 
 			result.Add(this.CalculateAverageDamage(myForce, enemyForce, boosts, vsEpic));
-			result.Add(this.CalculateReinforcedDamage(myForce, enemyForce, boosts, vsEpic));
+			result.Add(this.CalculateReinforcedDamage(claimerID, myForce, enemyForce, boosts, vsEpic));
 
 			return result;
 		}

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Data.Types.Enums;
 
@@ -11,12 +12,22 @@ namespace Data.Types
 
 		public int Min { get; set; }
 		public int Max { get; set; }
+        public int MinBonusVsEpic { get; set; }
+        public int MaxBonusVsEpic { get; set; }
 
 		public Classification TargetType { get; set; }
 		public int EffectValue { get; set; }
 		public Stat Stat { get; set; }
 		
 		public double ParentAbilityProcChance { get; set; }
+
+		[NonSerialized]
+		private string _parentsName;
+		public string ParentsName
+		{
+			get { return _parentsName; }
+			set { _parentsName = value; }
+		}
 
 		#region Effect Factories
 
@@ -183,7 +194,9 @@ namespace Data.Types
 				return result;
 			}
 
-			var avg = ((Min + Max)/2.0);
+		    var min = Min + (vsEpic ? MinBonusVsEpic : 0);
+		    var max = Max + (vsEpic ? MaxBonusVsEpic : 0);
+			var avg = ((min + max)/2.0);
 			if (IsDamageEffect())
 			{
 				if (Type == EffectType.FlurryDamage)
@@ -198,10 +211,13 @@ namespace Data.Types
 				result.Damage += (avg*ParentAbilityProcChance);
 
 				// Apply Percentile Boosts
-				foreach (var boostEffect in boosts.Where(x => x.Type == EffectType.Boost))
+				if (boosts != null)
 				{
-					var boostBonus = 1 + (boostEffect.ParentAbilityProcChance*(boostEffect.EffectValue*0.01));
-					result.Damage *= boostBonus;
+					foreach (var boostEffect in boosts.Where(x => x.Type == EffectType.Boost))
+					{
+						var boostBonus = 1 + (boostEffect.ParentAbilityProcChance*(boostEffect.EffectValue*0.01));
+						result.Damage *= boostBonus;
+					}
 				}
 			}
 			if (IsHealingEffect())
@@ -218,28 +234,18 @@ namespace Data.Types
 				result.AntiHeal += (avg*ParentAbilityProcChance);
 			}
 
-			// Apply Rally Effects
-			foreach (var rallyEffect in boosts.Where(x => x.Type == EffectType.Rally))
-			{
-				var abilBonus = rallyEffect.ParentAbilityProcChance * rallyEffect.EffectValue * this.ParentAbilityProcChance;
-				if (this.Type == EffectType.FlurryDamage)
-				{
-					abilBonus *= this.EffectValue;
-				}
-				result.Damage += abilBonus;
-			}
-
 			return result;
 		}
 
-		public CombatResult CalculateReinforcedDamage(Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic)
+		public CombatResult CalculateReinforcedDamage(Guid claimerID, Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic)
 		{
 			var result = new CombatResult();
 
-			foreach (var unit in myForce.ClaimReinforcements(TargetType, EffectValue))
+			foreach (var unit in myForce.ClaimReinforcements(claimerID, TargetType, EffectValue))
 			{
 				// Add each reinforced units total average damage potential (including reinforcements it might bring in too)
-				result.Add(unit.CalculateTotalDamageContribution(myForce, enemyForce, boosts, vsEpic).AdjustToProcChance(ParentAbilityProcChance));
+			    var baseDamage = unit.CalculateTotalDamageContribution(myForce, enemyForce, boosts, vsEpic);
+                result.Add(baseDamage.AdjustToProcChance(ParentAbilityProcChance));
 			}
 
 			return result;
