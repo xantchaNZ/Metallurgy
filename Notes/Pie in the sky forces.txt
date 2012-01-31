@@ -1,0 +1,61 @@
+Flabberghasting
+---------------
+Rage Vindicator (10-30-14-1)
+
+Commanders
+Halcyon		(0.5 * (11.5 * 4))[23]
+Cassandra	(0.5 * (11.5 * 4))[23]
+Korvald		21.0 
+Siren 		15.2(+ 0.4 * 9.66)[19.06]
+Deacon		2.5(+ .5 * (13.8 * 2))[16.3]
+Opak		(0.6 * (11.24 * 2))[13.49]
+Riggs		2.5(+ .5 * (10.35 * 2))[12.85]
+Stavron 	2.5(+ .5 * (10.35 *2))[12.85]
+Vile		9.0
+Terrogor	1.6(+ 0.4 * (7.89 + 8.625))[8.2] (Daemon & Azure Reaper + Thrasher)
+
+ = 146.99
+
+Assault
+APC + Equalizer 2.3 + 31.93 [34.23] 		
+Mammoth Tank 20.7 		[23.7  w/ Rallies]
+Praetor 12.04(+ .3 * (11.24 * 2)) [18.74] [20.17 w/ Rallies]
+Sidewinder 14.375 		[15.68 w/ Rallies]
+25 Anvil 13.8 [345] 	[14.7  w/ Rallies]
+Rifter 12.42 			[17.82 w/ Rallies]
+ 
+ = 445.47
+ 
+Structures
+Prometheus + Anvil * 2 = 11(+ 0.4 * (13.8 + 13.8))[22.04]
+Blockade 14.5
+12 Assembly Plant + Anvil	13.8 [165.6]
+
+ = 202.14
+ 
+Vindicators & Formation
+Ragnarok	18
+Rally 		17.95
+
+Total = 687.38 -> 3436.9 per flurry
+Total = 830.55 -> 4152.75 per flurry (20.83% Better than my current)
+
+Formation Rally
+50% * (0.9(SW) + 2.0(MT) + 1 APC + 3.6 Rifter + (0.65 + 0.3 * 1)(Praetor) + 0.6 * 37(Anvils) + 0.4 * 1.2(Prom) + 0.6 * 1 (Opak) + 0.5 * 1.2(Deacon) + 2 * 0.5 * 1.2(R&S) + 2 * 0.5 * 2 (H&C) + 0.4 * (1.32 + 0.6)(Terrogor) + 0.4 * 0.6 (Siren))
+.5* (7.5 + .95 + 22.2 + 0.48 + 0.6 + 1.2 + 2 + 0.77 + 0.2)
+17.95
+
+Equaliser Rally
+2 * 50% * (0.9(SW) + 2.0(MT) + 1 APC + 3.6 Rifter + (0.65 + 0.3 * 1)(Praetor) + 0.6 * 37(Anvils) + 0.6 * 1 (Opak) + 0.5 * 1.2(Deacon) + 0.4 * 1.2(Prom))
+= 1 * 7.5 + 0.95 + 22.2 + 0.6 + .48 +.2
+= 31.93
+
+Need Praetor, Thrasher, Rifter, 8 Assembly Plants, 29 Anvils, 8 Sharpshooters
+
+
+----------------------- OLD ------------------------------------
+
+Kaszatah Rally
+50% * (0.6 * 6 + 0.4 * (0.6 + 0.6 * 1.2 + 0.6)) (Rifter + Daemon/AZR/Thrasher from terrogor)
+= 0.5 * (3.6 + 0.4 * 1.92) 
+= 2.184

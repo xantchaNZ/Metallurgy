@@ -1,0 +1,123 @@
+Force 1 Behemoths + Misc low Epics
+Force 2 PvP 		 
+Force 3 Gorgon	
+Force 4 Enclave				7:1 w/ boosts
+Force 5 Asphodel	
+Force 6 Typhon	
+Force 7 Mortifex			2.25:1
+Force 8 Rag + Armoured
+Force 9 Learnian Hydra		10.2:1
+Force 10 Black Lithid?	
+
+27WC Remaining
+
+Goals
+ * Level 562/600 for Black Lithid
+	* 0/6 Bloodthirsty Jammer (Pathrazer)
+ * 17/34 Anvil for Armoured force (27 + 3 AP + 2 Deacon + 2 Prom)
+ * 40/43 PWs for current Vindi
+ * Apollo (8 + 10H + 16AH), Preator, Hydra, Raid Lt
+ * 0/8 Sharpshooters
+
+	*********
+	* EPICS *
+	*********
+	
+Prestige			13/80			80 Division
+Behemoth			5/340(480)		20*17 Anvil, (80 Gigas)
+Aerial Assualt		1/360			40*8 Sharpshooter
+Mortifex			19/260(385)		200 Mortifex, 10*6 Pathrazer, 125 Old Hammer
+Fallen Heroes		1/130(205)		100 Mortifex, 5*6  Pathrazer, 75  Old Hammer
+Anchor				132/400(450)	120 Learnean Hydra, 100 Raid Lt. Emmanuel, 30*6 Pathrazer, 50*1 Binary 
+Hydra				31/190(220)		40  Learnean Hydra, 60  Raid Lt. Emmanuel, 15*6 Pathrazer, 30*1 Binary
+
+Behemoth 	0/120 @ (3 for 375k), /45  @ (8 for 1.5m)
+Enclave 	0/120			(800k)
+Mortifex	0/44/69 		(952k) 	(6 Sets)
+Hydra		1/3/23
+
+	*********
+	*  PVP  *
+	*********
+	
+Combat Rating - http://apps.facebook.com/war_machine/?page=boss
+* 40000/60000 CR
+* Obsidian (PVP / Asp)		60k, 20k		2.5k-40k Stam
+* Rifter 					100k, 40k		5k-80k Stam
+
+* 1206 / 2000 Kills
+
+Arena				6/125		75 Enclave Pylon, 30 Boris, 20 Pyro Rig
+
+Faction L1 (200r)	59/50		50 Apollo
+Faction L2 (400r)	276/40		40 Apollo
+Faction L3 (800r)	0/160		60 Apollo, 50 Praetor, 50 Rancor
+Faction L4 (1300r)	0/200		100 Preator, 100 Rancor
+
+Faction 764/800 L3 Tokens
+
+Level 01 - 0 			No		max 15 members
+Level 02 - 100  (+100)	L1		max 20 members
+Level 03 - 250  (+150)	L1		max 25 Members
+Level 04 - 400  (+150)	L2		max 30 members
+Level 05 - 600  (+200)	L2		max 35 members
+Level 06 - 800  (+200)	L3
+Level 07 - 1050 (+250)	L3
+Level 08 - 1300 (+250)	L4
+
+	**************
+	*  MISSIONS  *
+	**************
+	
+	***********
+	*  STATS  *
+	***********
+
+Energy		800
+Stamina		2000
+Attack		1003/2000		
+Defense		500
+
+@ 6 stat points a day from 1 level up & training = 13 Days
+
+Force Attack: 	532,790
+Force Defense: 	270,110
+
+60 * 3.75E + 60 * 3.5S = 225 + 210 = 435 XP Generated per Hour
+(800 * 3.75E  + 2000 * 3.5S) * 1.25 = (3000 + 7000) * 1.25 = 12,500 XP per stim pack
+
+daily energy = 1440 Regen + 800 level up + 1000 Stimpack = 3240
+
+--------------------------------------------------------------------------
+
+
+
+Malgoth the Cannibal	Collection
+Devour Flesh	50%	11-33 + 20AH
+Bloodroar	60%	N/A	N/A	Increase Bloodthirsty Unit Damage by 50%
+Cannibalize	60%	N/A	N/A	Healing based on number of Bloodthirsty units (1.5x)
+
+Benediction, Redeemer of Light	Collection
+Glory Wave	62,00%**	N/A	N/A	Increase Righteous Unit Damage by 50%
+Great Purge	58,00%**	12-36 (24,00)	13,92	
+Burning Zeal	62,00%**	Prevent 2 Jams
+
+Omega, Machine of War	Collection
+Uplink	59,00%**	N/A	N/A	Increase Robotic Unit Damage by 50%
+Final Lockdown	60% N/A	N/A	N/A	Prevents Assault
+Magneton Cannon	61,00%**	10-30 (17,50)	10,68	Prevents Commander
+
+Nimbus, Floating Metropolis	Collection
+Sky Haven	56,00%**	N/A	N/A	Increase Flying Unit Damage by 50%
+Blitz Launch	61,00%**	N/A	N/A	Brings in 2 Flying
+Cascade Bomb	67,00%**	12-36 (24,00)	16,08	
+
+Apex, the Enclave Flagship	Collection
+Parasite Wave	62,00%**	10-30 (20,00)	12,40	
+Heart of the Enclave	53,00%**	N/A	N/A	Increase Xeno Unit Damage by 50%
+Psychosis	N/A	N/A	N/A	Controls Assault
+
+Raggles
+60% + 25% assualt
+60% Prevent 4 Jam
+60% 3-9 * 5

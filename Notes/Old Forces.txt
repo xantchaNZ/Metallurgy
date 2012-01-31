@@ -1,0 +1,244 @@
+***********************************************************************************
+
+Old Setup 1/3
+
+Wing 4-18-5
+Commanders 11.9 + 6.9 + 2.4 + 2.3 = 23.5(25.9)
+(Siren, Raiden, Skullkeeper, Mayumi)
+Assault
+2 Knight 2.3 + 2 Sand Crawler 3.0 + 3 Arc Trooper 3.8
+1 Razer 2.5 + 1 XI 2.1 + Kraken 7.2 + XMS 6.5 + Tremor 6.1 + Exodrone 5.0
+Poseidon 4 + Nightstalker 4 + Beast 3.2 + 2.3AH + Valkryie 2.9 + Hatchet 4.2
+= 69.7(72)
+Structures = 1.8*3 + 2.7 + 4.8 = 12.9
+(3 Missile Silo, Posiedon Engine, Skycom)
+
+Total = 106.1(110.8) -> 530.5(554) per flurry
+
+***********************************************************************************
+
+New Setup 11/3
+Devastator 6-20-8
+Commanders 11.9 + 6.9 + 2.4 + 2.3 + 2.0 + 0.3 * (2.4 + 2.4 + 2.4) = 27.66(30.06)
+5 Infestor 6.0
+3 Photon Walker 9.0
+3 Arc Trooper 3.8
+1 Razer 2.5
+1 XI 2.1
+Kraken 7.2
+XMS 6.5
+Tremor 6.1
+Exodrone 5.0
+Poseidon 4
+Nightstalker 4
+Beast 3.2 + 2.3AH
+=
+109(111.3)
+Structures - 1.8*5 + 2.7 + 4.8 + 4AH = 18.3(20.5) (swap 1 silo for a cluster)
+
+Total = 155(161.9) -> 775(809.5) per flurry
+
+***********************************************************************************
+
+Newest Setup 21/3
+
+Super Swarm 7-24-10
+Commanders 11.9 + 6.9(2.4) + 2.4 + 2.3 + 2.0 + 0.3 * (2.4 * 3) + 2.5 = 30.2(32.6)
+5 Infestor 6.0
+8 Photon Walker 9.0
+3 Arc Trooper 3.8
+1 XI 2.1
+XMS 6.5
+Tremor 6.1
+Kraken 7.2
+Exodrone 5.0
+Poseidon 4
+Nightstalker 4
+Beast 3.2 + 2.3AH
+=
+151.5 (153.8)
+Structures - 1.8*7 + 2.7 + 4.8 + 4AH = 21.9(24.1) (swap 1 silo for a cluster)
+
+Total = 203.6(210.5) -> 1018(1052.5) per flurry
+
+***********************************************************************************
+
+Newest Setup 31/3
+
+Super Swarm 7-24-10
+Commanders 11.9(+ 0.5 * 2.5)[13.15] + 2.4 + 2.3 + 2.0 + 0.3 * (2.4 * 3)[2.16] + 2.5 + 0.25 * (3.8 * 3 + 2.5)[3.48] = 28
+5 Infestor 6.0 [30]
+13 Photon Walker 9.0 [117]
+1 XI 2.1
+XMS 6.5
+Tremor 6.1
+Kraken 7.2
+Exodrone 5.0
+Beast 3.2 + 2.3AH [5.5]
+=
+177.1 (179.4)
+Structures - 1.8*8 + 4.8 + 4AH = 21(23.2) (swap 1 silo for a cluster)
+
+Total = 226.1(230.6) -> 1130.5(1153) per flurry
+
+***********************************************************************************
+
+06/4
+
+Super Swarm 7-24-10
+Commanders 11.9(+ 0.37 * 2.5)[12.9] + 2.35(+ .47 * (5 + 5.5))[7.29] + 2.0 + 2.5 + 1.4(+ .3 * 6)[3.2] + (0.3 * (6 * 3))[5.4] + (0.525 * (3.8 * 3 + 2.5))[7.3] = 40.6
+22 Photon Walker 9.0 [198]
+Tremor 6.1
+Kraken 7.2
+=
+211.3
+Structures - 1.8*7 + 4.8 + 4*2AH = 25.4
+
+Total = 272.9(277.3) -> 1364.5(1386.5) per flurry
+
+***********************************************************************************
+
+11/4
+
+War Division 8-26-12
+
+Commanders 
+Siren 	11.9(+ 0.37 * 2.5)[12.9]
+Halcyon	(0.525 * (3.8 * 3 + 2.5))[7.3]
+Riggs	2.35(+ .47 * (5 + 5.5))[7.29]
+Brood	(0.3 * (6 * 3))[5.4]
+Mary	1.4(+ .3 * 6)[3.2]
+Others	2.4 + 2.0 + 2.5 [6.9]
+ = 43
+
+25 Photon Walker 9.0 [225]
+Kraken 7.2
+=
+232.2
+
+Structures - 1.8*9 + 4.8 + 4*2AH = 29
+
+Total = 299.8(304.2) -> 1499(1521) per flurry
+
+***********************************************************************************
+
+13/4
+
+War Division 8-26-12
+
+Commanders 
+Siren 	11.9(+ 0.37 * 2.5)[12.9]
+Riggs	2.35(+ .47 * (9 + 5.5))[9.17]
+Halcyon	(0.525 * (3.8 * 3 + 2.5))[7.3]
+Brood	(0.3 * (6 * 3))[5.4]
+Mary	1.4(+ 0.3 * 6)[3.2]
+Others	2.4 + 2.0 + 2.5 [6.9]
+ = 44.87
+
+Assault
+25 Photon Walker 9.0 [225]
+Anvil 11.7
+ = 236.7
+
+Structures - 
+5 Missile Silo 1.8 [9] 
+4 Viral Cluster 4AH [16] 
+Fission Charge 9.1 
+Skycom 4.8 
+Skycom NeuroCore 4.8(+ 0.6 * 5)[7.8] 
+ = 46.7
+
+Total = 319.47(328.27) -> 1597.35(1641.35) per flurry
+
+***********************************************************************************
+
+19/4
+
+War Division 8-26-12
+
+Commanders 
+Siren 	11.9(+ 0.37 * 2.5)[12.9]
+Riggs	2.35(+ .47 * (9 + 9))[10.81]
+Halcyon	(0.525 * (3.8 * 3 + 2.5))[7.3]
+Brood	(0.3 * (6 * 3))[5.4]
+Mary	1.4(+ 0.3 * 6)[3.2]
+Others	2.4 + 2.0 + 2.5 [6.9]
+ = 46.51
+
+Assault
+24 Photon Walker 9.0 [216]
+2 Anvil 11.7 [23.4]
+ = 239.4
+
+Structures - 
+2 Missile Silo 1.8 [3.6] 
+7 Viral Cluster 4AH [28] 
+Fission Charge 9.1 
+Skycom 4.8 
+Skycom NeuroCore 4.8(+ 0.6 * 5.5)[8.1] 
+ = 53.6
+
+Total = 324.11(339.51) -> 1620.55(1697.55) per flurry
+
+***********************************************************************************
+
+26/4
+
+War Division 8-26-12
+
+Commanders 
+Siren 	11.9(+ 0.37 * 2.5)[12.9]
+Riggs	2.35(+ .47 * (9 + 9))[10.81]
+Halcyon	(0.525 * (3.8 * 3 + 2.5))[7.3]
+Brood	(0.3 * (6 * 3))[5.4]
+Mary	1.4(+ 0.3 * 6)[3.2]
+Others	2.4 + 2.0 + 2.5 [6.9]
+ = 46.51
+
+Assault
+23 Photon Walker 9.0 [207]
+3 Anvil 11.7 [35.1]
+ = 242.1
+
+Structures
+Prometheus + Kraken + Tremor Wyrm = 9.74(+ 0.385 * (6.1 + 7.2))[14.86]
+Skycom NeuroCore 4.8(+ 0.6 * 9)[10.2] 
+Fission Charge 9.1 
+Skycom 4.8 
+8 Viral Cluster 4AH [32] 
+ = 70.96
+
+Total = 341.97(359.57) -> 1709.85(1797.85) per flurry
+
+***********************************************************************************
+
+5/5 - Big PvP week this week
+
+War Division 8-26-12
+
+Commanders 
+Siren 	11.9(+ 0.37 * 2.5)[12.9]
+Riggs	2.35(+ .47 * (9 + 9))[10.81]
+Stavron 2.5 + (.5 * (9 + 5.5))[9.75]
+Halcyon	(0.525 * (3.8 * 3 + 4.2))[8.19]
+Brood	(0.3 * (6 * 3))[5.4]
+Mary	1.4(+ 0.3 * 6)[3.2]
+Ascaris 2.5 
+Oracle	2.0 
+ = 54.75
+
+Assault
+22 Photon Walker 9.0 [198]
+1 Titan 10.4
+3 Anvil 11.7 [35.1]
+ = 243.5
+
+Structures
+Prometheus + Kraken + Tremor Wyrm = 9.74(+ 0.385 * (6.1 + 7.2))[14.86]
+Skycom NeuroCore 4.8(+ 0.6 * 9)[10.2] 
+Fission Charge 9.1 
+Skycom 4.8 
+8 Viral Cluster 4AH [32] 
+ = 70.96
+
+Total = 351.61(369.21) -> 1758.05(1846.05) per flurry

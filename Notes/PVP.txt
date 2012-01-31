@@ -1,0 +1,60 @@
+WM PVP
+
+Swarm Vindicator (8-25-12-1)
+
+Commanders 
+Maion			3.0				Prevent Jam x2 		(Ri)
+Halcyon	+ PKs	[5 + 5H]		4 Infantry (PKs)
+Cassandra		[5 + 5H]		4 Infantry (PKs)
+Stavron		 	2.5				Jam Xeno, 2 Robotic
+Gustmich		5.5				Jam 3 Assault
+Kaszatah 		6.0				Raw Damage
+Vile			9.0				Jam Assualt + Jam Commander
+Empress 		7.0				Jam BT x2			(Ri)
+
+Assault
+	Muon Walker x2				Jam Assualt, Prevent Jam (Ro)
+	Orbo						Jam Assault (F)
+	Enforcer Mech x5			Jam Xeno	(Ro)
+	Blightcrusher				Jam Infantry x2 (AB)
+	Xeno Mauler					Control Robotic (X)
+	Razor Hawk					Raw Damage
+	Azure Reaper x3				Block Xeno / Flying Jams (FX)
+	Annelid Mass				Jam Assault (B)
+	Exodrone					Jam Commander (FRo)
+	Dreadship 					1 Flying  (FX)			-> Daemon (FX) -> Azure Reaper (FX)
+	Juggernaut					1 Robotic (ARo)
+	Tremor Wyrm					Jam Assualt (AX)
+	Kraken						Raw Damage + Anti-Naval
+	Alpha Mech					Jam Armoured x2 (Ro)
+	Gun Raven					Raw Damage
+	Titan						Jam Structure, Anti Armoured
+	XMS							Jam Infantry, Control Assault (FX)
+	Sidewinder					Raw Damage (A)
+
+Structures
+	Comsat						Prevent 1 Jam
+	Prometheus					11 + 2 Assualt + 1 Prevent Jam
+	Skycom NeuroCore 			4.8 + 1 Robotic
+	Machine Mill				2 Robotic
+	Artillery Encampment 		11.25
+	Fission Charge 				9.0 
+	Gungnir 					8.0 + Anti Xeno Damage
+	Pantheon 					2.0 + Control Commander
+	Assembly Plant				Blitz
+	Righteous Barricade 		2.0 + 1 Righteous + -1D
+	PSG 						-1D
+	Assembly Plant				Collossus -1D
+	
+Vindicators
+	Apex
+
+Reinforcements
+Assualt(2) - Xeno Dozer(A), Lance Rider (A)
+Infantry(8) - Peacekeeper
+Righteous(3) - Attalia, Peacekeeper
+Robotic(6) - Goliath, Nightstalker, Aiko, Octane, Skycom, Cannon Walker, The Beast
+Flying(1) - Daemon (FX)-> Azure Reaper (FX)
+Structure(2) - Skycom, Viral Cluster
+
+ 

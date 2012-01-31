@@ -1,0 +1,417 @@
+ **********************************************************************************************************************
+
+Hatchling Swarm
+20 slots, 55k Health, 2750 -> 6000 Caps
+5x 1.1 HPS Hatchlings (35% * 2-4 Leech) (27.5 healing per flurry)
+Need top 20% to get a Prestige Token
+
+ **********************************************************************************************************************
+
+Chimera
+100 slots, 1,000,000 Health
+80% Chance to Jam a Flying Unit on each attack
+15% Chance to Jam 2 Flying Units on each attack
+	* Requires at least 24,001 damage, top 10% and a full 100/100 reinforcements to drop a Chimera
+
+ **********************************************************************************************************************
+
+Tremor Wyrm
+300 Slots, 30,000,000 Health
+Heals 1.6 HPS
+ * Nuclear Bomb, Requires 1000 supports, does 15m Damage
+ * Requires 265k to drop a Reaper
+
+ **********************************************************************************************************************
+ 
+XMS
+1000 Slots, 80,000,000 Health
+79% Chance to Jam an Infantry Unit on each attack
+
+ **********************************************************************************************************************
+
+Kraken, 
+20 Slots, 820k Health, 41k Standard Cap
+Magnetic Field 80 HPS (100% * 80 Heal) (400 healing per flurry)
+ * Charging EMP requires 1020 Energy
+ * Activating EMP will cause the Kraken to lose the Magnetic Field ability for 10 minutes
+
+  **********************************************************************************************************************
+
+Titan
+20 Slots, 5.5m Health, 275k Standard Cap
+Magnetic Field 150 HPS (100% * 150 Heal) (750 healing per flurry)
+ * Charging EMP requires 2500 Energy
+ * Activating EMP will cause the Titan to lose the Magnetic Field ability for 10 minutes
+ * Charging Inferno Bomb requires 2500 Energy
+ * Activating Inferno Bomb will add 80 damage to each attack (400 per flurry) for 10 minutes
+
+ * Standard loot (top 10%) is 3 Titan Tokens, 1 Brotherood Token, 1 Prestige Token, 1 Viral Cluster OR Ravager & 2 Sandcrawlers
+ * Top place gets +1 Sand Crawler
+ * Host, if within top 10%, gets +1 Titan Token, & +1 Viral Cluster OR Ravager
+ 
+ **********************************************************************************************************************
+ 
+Cataclyms
+100 Slots, 20m Health, Usually 402k or Uncapped
+Sigma Pulse 60 HPS (100% * 60 Heal) (300 healing per flurry)
+ * Charging Atomize requires 2500 Energy
+ * Activating Atomizer will cause the Cataclysm to lose the Sigma Pulse ability for 1 hour
+ 
+Cata Targets
+160k for 1C        0.33PW
+280k for 3C 0.25FC 0.66PW
+400k for 4C 0.58FC 0.66PW
+
+  **********************************************************************************************************************
+
+Behemoths.
+100 Slots, 50M Health, usually Uncapped
+5x 20 hps 30 dps Bloodthirsty Behemoths (500 Healing per flurry)
+ * Cannot be Jammed or Controlled excpt by Ascaris
+ * Ascaris can control one for effective +10 AH & +15 dps
+ * Oracle gets a damage bonus against BT units, Effective 3.9 without Ascaris, 3.5 with (due to 1 sometimes being controlled by Ascaris)
+
+Behe Targets
+375k for 3B 0.5R
+1m for 5B 1R
+2m for 8B 3R 
+
+  **********************************************************************************************************************
+
+Sentinels. 
+100 Slots, 85M Health, usually Uncapped
+3x 16 hps 24 dps Bloodthirsty Sentinels (240 Healing per flurry)
+ * Cannot be Jammed or Controlled excpt by Ascaris
+ * Ascaris can control one for effective 9.92 AH & + 12 dps (0.8% chance of all 3 sentinels not proccing therefore not providing any Anti-heal at all, otherwise 50% chance to prevent 20)
+ * Oracle gets a damage bonus against BT units, Effective 2.3 without Ascaris, 1.93 with (due to 1 sometimes being controlled by Ascaris)
+
+Sentinel targets
+638k for 3P, 1S
+1.7m for 5P, 2S
+2.6m fpr 6.5P, 3S OR 9P, 5S (Least efficient)
+3.4m for 9.5P, 5S OR 11P, 6S
+
+**********************************************************************************************************************
+ 
+Asphodel Vanguards
+100 Slots, 50M Health, usually Uncapped
+18x 30 HPS (100% * 30 Heal) Infantry Soldiers (2700 Healing per flurry)
+ * Can be Jammed or Controlled by Assault & Infantry Jammers / Controllers
+ * Controllers are Valentina, Apex, XMS
+ * Assault & Infantry Jammers / Controllers gain an effective Anti Heal of Jam/Control %ge * 30) e.g a 40% Jam is worth 30 * 0.4(40%) = 12 AH
+
+Asp Targets
+126k for 1A
+302k for 3A, 1V
+762k for 5A, 2V
+1.76m for 10A, 3V
+
+  **********************************************************************************************************************
+
+Typhons
+20 Slots, 12.5m health - 625k cap
+6x 24 HPS (80% * 30 Heal) Armoured Medics, 8 After Enrage (720 healing per flurry)
+6x 80% Assualt Jam - Robotic, 8 After Enrage (~6 Jams per attack)
+6x Boson Laser - Unjammable, 8 After Enrage
+ * Medics Can be Jammed by Armoured Jammers ONLY and cannot be controlled.
+ * The Assualt Jammers can be jammed by Robotic Jammers ONLY and cannot be controlled. However it is not recommended to bother jamming them and to let these Jam your Armoured Jammers.
+ * Armoured Jammmers gain an effective Anti Heal of Jam/Control %ge * 24) e.g a 40% Jam is worth 24 * 0.4(40%) = 9.6 AH
+ * 6-8 Assualt Jammers are recommended.
+ * Maion & Prometheus gain a subtle boost in this epic by preventing some jams on your early force units. Its only a minor gain of around 1-3 dps
+
+Typhon Targets
+64k 	1T
+260k 	2T 1FP
+503k	3T 2FP
+625k	5T 2FP
+1263k	7T 4FP
+
+ **********************************************************************************************************************
+
+Enclave Assualt 
+Requires level 350, 48 Hours
+20 Slots, 20m health, 7.5m team health, common 1m Cap
+4x Support Drone (Xeno), 100% Heal for 20 and Jam 2 Assualt Units
+10x Zeno Paratrooper (Xeno/Infantry), 100% 8-22 Damage 15 dps
+1x Enclave Flagship 100% 25-75 Damage 50 dps
+1x Enclave Flagship 50% 25-75 Damage  25 dps
+
+After enrage: (Enrages at 20%)
+4x Enclave Flagship	25-75 damage
+4x Support Drones 20 heal + Jam x 2
+16x Xeno Paratroopers 8-22 damage
+
+3.5:1 + Recommended to not put event in any danger
+
+Enclave Targets
+100k		1 BE			BE 100k
+400k		3 BE,  1 AA		BE 133k, AA 400k
+800k		5 BE,  3 AA		BE 160k, AA 267k
+1,000k		8 BE,  3 AA		BE 125k, AA 333k
+2,000k		11 BE, 5 AA		BE 182k, AA 400k 
+2,600k		15 BE, 5 AA		BE 173k, AA 520k
+ 
+ **********************************************************************************************************************
+
+Gorgon Wyrm
+Requires level 200, 72 Hours
+300 Slots, 40m health,
+5x Gorgon Eye (Naval) 	100% Jam Assault Unit
+5x Gorgon Wyrm 			100% 15-45 Damage + 20 Heal
+ * Eyes can be jammed by Navy Spec Ops but this is only recommened if you don't have access to Anti-Jammers
+ * Recommended to Run Maion, 2x Muon Walker and Prometheus, In this case you should prevent an average of 2-3 Jams, and any jams that get through will be soaked by the Muons
+
+Gorgon Targets 
+148k	1G				148
+345k	3G, 1GM			115		344
+667k	5G, 3GM			133		222		<<<<<
+833k	8G, 3GM			104		278
+1669k	11G, 5GM		152		337
+ 
+ **********************************************************************************************************************
+
+Mortifex
+Requires level 500, 72 Hours
+20 Slots, 20m health, 6m Team Health
+Rally Cry - 10,000E, heals Team Health for 2m. Each 20E charge does 500 damage and effectively heals for 4000 HP
+PRE_ENRAGE
+2x Mortifex Maw			(Assault)		100% 53-144 Damage (Controllable)
+10x Mortifex Claw 		(Armoured)	 	100% 15-36 Damage + Jam Assault
+5x Mortifex Carapace 	(Structure)		50?% Prevent Jam, 100% Reduce Damage by 1
+
+ENRAGE
+3x Mortifex Maw			(Assault)		100% 53-144 Damage (Controllable)
+13x Mortifex Claw 		(Armoured)	 	100% 15-36 Damage + Jam Assault
+8x Mortifex Carapace 	(Structure)		50?% Prevent Jam, 100% Reduce Damage by 1
+2x Mortifex Eye				 			100% Control Commander (Vile >> Gustmich)
+2x Mortifex Tendril			 			100% Damage per reinforce
+ * Recommended to run 7 Armour Jams and 10 Structure Jams (enough to ensure all 5 are jammed pre-enrage)
+	(5 Quad Rover, Alpha Mech, Titan, Barracuda, Poseidon(w/ Siren), 6 Xeno Singularis)
+
+	Mortifex Targets 
+126			1M
+275-481k	3M
+618-713k	3M	1FH
+857k		6M  1FH
+950-1296k	6M  3FH
+1500-2465k	9M	3FH
+7765-8736k	13M 5FH
+ 
+ **********************************************************************************************************************
+
+Learnian Hydra
+Requires level 400, 72 Hours
+100 Slots, 150m health, 15m Team Health, You need at least 10:1 ratio
+No Enrage
+10x Hydra Claw (Naval) 100% 11-28 Damage
+ * Optimum Force requires at least 10 Naval Jams plus as much healing as you can get
+
+Hydra Targets 
+282k-308k	 5A
+389k-490k	 7A
+787k-1102k	 7A  1H
+1202k-1250k	 10A 1H
+1462k-2078k	 10A 3H <<<<
+2565k-3258k	 13A 3H
+4544k-8831k	 13A 5H
+ **********************************************************************************************************************
+
+Black Lithid
+Requires level 600, ?? Hours
+20 Slots, ??m health, ??m Team Health, You need at least 4.5:1 Ratio
+6x Alpha Lithid (Bloodthirsty) 100% 99-126 + 20H
+6x Omega Lithid (Xeno) 100% Control Assualt
+ * Enforcer Mechs & Stav for Xeno Jams
+ * Alaric, Cupid, Pathrazor for BT Jams
+
+Lithid Targets 
+
+
+ **********************************************************************************************************************
+ 
+Behe
+51k = 	1 @ 51k per token
+262k = 	2 @ 131k per token
+376k = 	3 @ 125k per token
+756k = 	4 @ 189k per token
+1m = 	5 @ 200k per token
+1.5m = 	8 @ 188k per token
+3m = 	12 @ 250k per token
+
+Rage Behe
+375k	0.5 @ 750k per token
+1m		1 @ 1m per token
+2m		3 @ 667k per token
+
+50,300	Token: Behemoth x1
+261,300	Token: Behemoth x1
+375,100	Token: Rage Behemoth x1 or Token: Behemoth x2
+756,100	Token: Behemoth x1
+1,000,900	Token: Behemoth x2 or Token: Rage Behemoth x1
+1,503,400	Token: Behemoth x3
+2,002,400	Token: Rage Behemoth x2
+3,095,500	Token: Behemoth x4
+
+ **********************************************************************************************************************
+
+ Protector
+214k = 		1		@ 214k per token
+638k = 		3		@ 213k per token
+1.7m = 		5		@ 340k per token
+2.57m = 	6.5(9)	@ 396k per token / 286k per token
+3.4m = 		9.5(11)	@ 358k per token / 309k per token
+5.2m = 		13.5(15)@ 385k per token / 347k per token
+6.82m = 	17.5(19)@ 390k per token / 359k per token
+
+Sent
+426k = 		1		@ 426k per token
+1.28m = 	2		@ 640k per token
+2.57m = 	3(4)	@ 857k per token / 642k per token
+2.98m = 	5(6)	@ 596k per token / 497k per token
+
+213,533 - 424,820 Token: Protector x1
+425,148 - 637,552 Token: Sentinel x1
+637,558 - 850,002 Token: Protector x2
+1,275,142 - 1,699,762 Token: Sentinel x1
+1,700,165 - 2,117,283 Token: Protector x2
+2,563,518 - 3,400,046 Token: Protector x3/Sentinel x2
+2,980,656+ Token: Sentinel x2
+3,400,506 - 5,079,276 Token: Protector x3
+5,191,954 - 6,701,413 Token: Protector x4
+6,810,273+ Token: Protector x4
+
+ **********************************************************************************************************************
+
+Asphodel
+126k		1	126k
+302k		3	101k
+762k		5	153k
+1023k		7	146k
+1761k		10	176k
+2001k		14	143k
+
+Vanguard 
+202k		1	202k
+502k		2	251k
+1501k		3	500k
+3006k		4	750k
+5022k		6	837k
+ 
+Asphodel Vanguard loot
+0 - 24,879 You did not do enough damage
+26,126 - 48,631 Trophy:Vanguard Cannon x1
+52,453 - 124,196 Token: Prestige x1
+125,794 - 198,987 Token: Asphodel x1
+201,610 - 288,194 Token: Vanguard x1
+301,701 - 400,003 Token: Asphodel x2
+400,560 - 498,951 Token: Prestige x3
+501,295 - 730,644 Token: Vanguard x1
+761,192 - 997,366 Token: Asphodel x2
+1,022,075 - 1,493,342 Token: Asphodel x2
+1,500,244 - 1,739,172 Token: Vanguard x1
+1,760,680 - 1,992,097 Token: Asphodel x3
+2,000,538 - 2,903,812 Token: Asphodel x4
+3,005,144 - 4,950,792 Token: Vanguard x1
+5,021,082 - 6,836,862 Token: Vanguard x2
+
+ **********************************************************************************************************************
+ 
+typhon loot
+35,000		Typhon Gauntlet
+70,000:     1 Typhon
+165,548:   2 Typhons 
+259,096:   2 Typhons and 1 Fallen Prince 
+375,000:   3 Typhons and 1 Fallen Prince
+503,000:   3 Typhon, 2 Fallen Prince 
+615,898:   5 Typhon, 2 Fallen Prince  <-- Optimum
+967,000:   7 Typhon, 2 Fallen Prince
+1,262,423: 7 Typhon, 4 Fallen Prince  
+1,563,603: 9 Typhon, 4 Fallen Prince
+2,507,603: 9 Typhon, 6 Fallen Prince
+
+0 - 11,327.........................You did not do enuff damage
+34,414 - 57,956 ................Trophy: Typhon Gauntlet x1
+63,513 - 146,712...............Token: Typhon x1
+159,285 - 204,156.............Token: Typhon x1 
+259,096 - 370,960.............Token: Fallen Prince x1
+377K - 480,626 ................Token: Typhon x1
+503,000 - 619,935.............Token: Fallen Prince x1
+619,935 - 937,131.............Token: Typhon x2
+951,551 - 1,237,007: ........Token: Typhon x2
+1,260,489 - 1,560,181 ......Token: Fallen Prince x2
+1,563,083 - 2,430,778.......Token: Typhon x2
+2,510,738- 3 million+ .......Token: Fallen Prince x2 
+
+  **********************************************************************************************************************
+
+Enclave Loots
+100k		1 BE			BE 100k
+400k		3 BE,  1 AA		BE 133k, AA 400k
+800k		5 BE,  3 AA		BE 160k, AA 267k
+1,000k		8 BE,  3 AA		BE 125k, AA 333k
+2,000k		11 BE, 5 AA		BE 182k, AA 400k 
+2,600k		15 BE, 5 AA		BE 173k, AA 520k
+
+90,000+					Trophy: Paradrop
+102,396 - 241,148		1 Burning Enclave									0
+262,927 - 377,159		3 Burning Enclave									0
+400,269 - 576,343		3 Burning Enclave, 1 Aerial Assault					0
+607,577 - 784,200		5 Burning Enclave, 1 Aerial Assault					158k-219k
+801,353 - 976,383		5 Burning Enclave, 3 Aerial Assault 				405k-437k
+988,300 - 1,419,899		8 Burning Enclave, 3 Aerial Assault					938k-965k
+1,439,808 - 1,904,494   11 Burning Enclave, 3 Aerial Assault 				1000k-1409k
+2,001,500 - 2,499,928	11 Burning Enclave, 5 Aerial Assault 				1604k-1726k
+2,501,299 - 3,853,658	15 Burning Enclave, 5 Aerial Assault				2022k-2850k
+4,014,736+				15 Burning Enclave, 8 Aerial Assualt				4129k-6672k
+
+  **********************************************************************************************************************
+
+148,495 - 1 Gorgon					148
+210,601- 2 Gorgon					105
+262,015 - 3 Gorgon					87
+344,409- 3 Gorgon, 1 Maw			115		344
+440,763 - 5 Gorgon, 1 Maw			88		440
+666,724 - 5 Gorgon, 3 Maw			133		222		<<<<<
+?833,000 - 8 Gorgon, 3 Maw			104		278
+1,250,821 - 11 Gorgon, 3 Maw		114		417
+1,668,489 - 11 Gorgon, 5 Maw		152		337
+2,083,254 - 15 Gorgon, 5 Maw		139		417
+4,219,784 - 15 Gorgon, 9 Maw		282		468
+
+  **********************************************************************************************************************
+
+Tier 1
+
+Hatchling Swarm
+
+Tier 2
+
+Chimera
+Tremor Wyrm
+Xeno Mothership
+
+Tier 3
+
+Kraken 
+Cataclysm
+Titan 
+
+Tier 4
+
+Behemoth
+Sentinels
+Gorgon Wyrm
+
+Tier 5
+
+Asphodel
+
+Tier 6
+
+Typhon
+Enclave
+
+Tier 7
+
+Mortifex
+Hydra

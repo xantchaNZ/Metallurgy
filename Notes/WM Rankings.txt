@@ -1,0 +1,736 @@
+
+--------------------------------	
+
+PW w/ Omega & beowulf + RV = (9.0 * 1.3) + (0.5 * 0.6) + (0.5 * 0.6) = 11.7 + 0.3 + 0.3 = [12.3]
+Anvil w/ Ragnarok & Equaliser + RV = (12.0 * 1.15) + (2 * 0.5 * 0.6) + (0.5 * 0.6) = 13.8 + 0.6 + 0.3 = [14.7]
+BA w/ Omega & Equaliser & Beowulf + RV = (9.0 * 1.3) + (2 * 0.5 * 3 * 0.5) + (0.5 * 3 * 0.5) + (0.5 * 3 * 0.5) = 11.7 + 1.5 + 0.75 + 0.75 = [14.7]
+Rumbler w/ Benediction & Opak & Equaliser & RV = (8.5 * 1.3 * 1.15) + (2 * 0.5 * 0.5) + (0.5 * 0.5) = 12.71 + 0.5 + 0.25 = [13.46]
+
+--------------------------------	
+
+New WC Units (15th Jan 2012)
+Deacon (C)				50% 3-7 + Reinforce 2 Armoured [14.5] w/ Anvils, [16.3] w/ Anvils & Rag
+Cultivator (FX)			50% 5-15 + 15 AH [5 + 7.5AH]
+Mystic Obelisk (S)		50% 10H [5H]
+						20% 15AH [3AH]
+
+--------------------------------	
+
+Learnian Hydra Update (11th January 2012)
+Binary (R)			50% 5H +5% Defense
+					50% 3-7 +5% Attack
+					[2.5 + 2.5H]
+Pathrazer (AX)		50% 2-6 +Jam BT [2.0]
+Learnean Hydra UN	50% +25% Defense
+					60% 7-21 [8.4]
+Raid Lt. Emmanuel	70% 45AH [31.5AH]
+					40% Reinforce Naval
+Sharpshooter Buff	50% 10-30 [10.0]
+
+My Thoughts on new units
+Binary - Seems very weak and is very expensive for what it does, Actually looks like a mission unit, if it had 100% proc rates might be decent.
+Pathrazer - Its good to have a repeatable Bloodthirsty Jam. but all the same I probably wont get any unless needed for an epic in the future, no ones really running BT in pvp anymore.
+Hydra - Not going to bother with his unless the Guardian Lance proc rate is 90%+ like Sidewinder, you need to be a DEF superstar for this to be good imo.
+Raid Lt. - Seems decent provided its a sizeable amount of Anti-Heal. Wont really shine until we get a better Naval Reinforcement than Razor though.
+Sharpshooter buff - Waiting to see how much by, but these might actually be worth picking up now. probably at least 8 for Cassandra / Halcyon for epics
+
+All up though, I don't actually see anything there that makes me want to rush out and kill more than 1 Hydra, for kicks.
+Of course, proc rates & damage ranges could be higher than expected which would make some of them more compelling I guess.
+
+--------------------------------	
+
+Tethys Gorge Update (7-16 December 2011)
+Rumbler (A-ARi)		 	50% 9-25 [8.5] 9.775 w/ Opak, 11.05 w/ Bene, 12.71 w/ Both, +0.5 Damage from Equaliser
+Tesla Field (S)		 	50% 3-7 [2.5] + Jam Structure
+Opak (C-Ri)			 	60% Reinforce 2 Righteous [11.73] (2 Rumblers)
+						60% + 25% Righteous damage [+15%]
+Last Stand (8-28-10) 	50% 20-60 Damage + 20-60 Healing [20 + 20H]
+Mobile Encampment	 	50% 16-24H + 5AH [10.0H + 2.5AH]
+Mortifex 				60% 6-18 [7.2] + Jam Assault
+						50% Control Commander
+						50% 4-12 + 8H [4 + 4H]
+						[11.2 + 4H]
+Preator (L4)(ARi)		65% 7-21 [9.1]
+						30% Reinforce 2 Righteous [5.1] (Rumblers) 
+						[14.2]
+						[16.33] w/ Rag or Opak
+						[18.78] w/ Both
+Rancor (L4) (AB)		50% 8-24 [8.0] + Jam Assault
+Adytum now				55% (8.5 * 2) [9.35], [12.37] w/ Opak & rag
+
+--------------------------------	
+
+haloween Update
+Korvald		60% (18-52) [21.0]
+Nightmare	60% (7-21) [8.4], [11.1] with Omega
+Zutturghast	60% 4-12 [4.8] + Jam Infantry (BT)
+Equalizer	50% Rally Armoured +2 (Infantry)
+Old Hammer	50% Prevent Jam
+			60% 3-10 [3.9] + Inc Defense 25%
+Siren Buff	40% (16-48) + Spitfire 40% 3-9 + Naval? = 12.8 + 2.4 + 1(Razor) [16.2]
+
+--------------------------------	
+
+Mortifex Update
+Ragnarok, the World-Ender
+				60% +25% assault [+15%]	
+				60% Block 4 jams
+				60% 3-9 x5 [18]
+Rage Vindi		(10-30-14-1)
+				50% Rally Assualt +1
+
+--------------------------------	
+
+Gorgon Wyrm Update
+Cassandra		50% (4 * 7.5) [15.0] (50% Reinforce 4 Infantry)
+				75% + 25% AP 
+Blitz			50% 2 per reinforced?
+Tarantula		50% 3-9 [3.0]?
+				50% 2 per jammed?
+
+--------------------------------	
+
+Anakis caverns update
+
+Templar			60%	2-4 * 2 [3.6]
+The Empress		60%	6-18 [7.0] + Jam Bloodthirsty Assault x2
+R Barricade		70% 2-4 [2.0] + Reinforce Righteous [7.95] w/ Rumbler
+				40% -1 all damage
+Purified March 8/25/8/0 
+				80% 20H [16.0H]
+				76% Reinforce Righteous * 2 [12.75] w/ Rumblers
+
+--------------------------------				
+				
+Faction Wars Update
+
+Stagger Shooter 	40% 	3-7 	2.0
+					40%		4x 1 	1.6 [3.6]
+Sidewinder			90% 	7-21 = 	12.6
+Mammoth Tank		50%		9-27 = 	9.0
+					50% 	3x 3-9	9.0 [18.0]
+Apollo (Ari)		50% 8-24 + 20H [8 + 10H]
+					80% 20 AH + 1.6 * # BT [16AH + 1.3 * BT]
+					
+1	Mammoth Tank	Gun Siege		68	38	55.88%	10	27	10.96	
+1	Mammoth Tank	Siege Shatter	68	99	145.59%	3	9	8.54					
+					
+Chance nothing happens 	= .4 * .5 = 0.2 = 40% 3-7  + 40% 4x1 = 2.0 + 1.6 [3.6]
+Chance only Omega		= .6 * .5 = 0.3 = 40% 5-11 + 40% 4x2 = 3.2 + 3.2 [6.4]
+Chance only Beo			= .4 * .5 = 0.2 = 40% 4-8  + 40% 4x2 = 2.4 + 3.2 [5.6]
+Chance Both				+ .6 * .5 = 0.3 = 40% 6-12 + 40% 4x3 = 3.6 + 4.8 [8.4]
+= .2 * 3.6 + .3 * 6.4 + .2 * 5.6 + .3 * 8.4
+= 0.72 + 1.92 + 1.12 + 2.52
+= 6.28
+
+--------------------------------				
+
+Artmeis Besieged Update
+
+Azure Reaper		40% 2-4 * 3 = 3.6
+Tactical Infantry 	50% 8-22 = 7.5 + 50% Jam Flying
+Aerial Swarm		60% Chance to boost flying by 50%, Brings in 5 Flying units (8-25-0-0)
+Kaszatazh			50% 5-15 = 6.0 + Rally Flying?
+Purifier			60% 12-18 Heal 9.0 Heal
+
+--------------------------------				
+
+Enclave Assualt Update
+
+CYCLE MECH 		40% 4 - 10 = 		3.5 + 40% Armoured
+XENO DOZER		70%	5-15 = 			7.0 + Extra Damage per Infantry
+GUSTMICH		50% 2-4 + 40% 5-15	1.5 + 4 = 5.5 + 50% Jam 3 Assualt (Good for Asphodels)
+GUSTMICH vs Apshodel 5.5 + 45 = 50.5
+SHARPSHOOTER 	50% 8-24 			8.0 + 50% Jam Xeno (Now buffed to 50% 10-30 [10.0])
+Colossus		50% all dmg - 1, 75% 2-4 * 3 = 6.75
+
+--------------------------------				
+
+26/04 Update
+
+WC Units
+Baraccus Commander - 50% 3-9 3.0 + Rally Infantry +1
+Venomous Raptor - 70% 6 AH + Reinf = 4.2 AH + 2.94 + 2.06 + 1.44 = (10.64 AH per 4 chain)
+Spitfire - 50% 2-4 * 3 = 4.5
+
+Mission Units
+Concussive Guard - 50% 1-3 * 3 = 3.0 + 0.75 from Beo + 0.75 from Baraccus + ~30% from Omega
+Enforcer Mech - 50% 3-9 = 3.0 (Based on Revolver)
+Stavros - 2.5 + 50% Robotic * 2 (Based on Riggs)
+Artemis - 50% of 30% inc structures = ~15% Bonus?
+Gungnir - 50% Flurry of 2-6 * 4 = 8 dps
+
+~150 WC (25 WC Rage Pack @ 16% Chance)
+16.85	Infected Grunt vs Asphodel Vang		2.75 + 47% Jam Infantry (18?)
+12.45	Blitz Armour + Omega + Beowulf		9.75 * 1.3
+11.7	Blitz Armour + Omega				9.0 * 1.3
+9.75	Blitz Armour + beowulf				9.0 + 0.5 * 3
+9.0		Blitz Armour						50% 3-9 * 3 (900+ Attacks by Time Graves)
+2.9		Abolisher							48% 3-9 + Jam Commander
+2.75	Infected Grunt						47% 3-9 + Jam Infantry					
+9.0		Mortar Bunker						50% 9-27						
+
+--------------------------------				
+
+Terrogor + Exodrone + Daemon + Azure Reaper = 1.6 + 0.4 * (6.68 + 5) = 6.272
+Terrogor + Exodrone + Daemon + Azure Reaper w/ beowulf, kaszatah & Omega = 1.6 + 0.4 * (7.52 + 7) = 7.4
+
+Exodrone w/ omega = 6.5
+Exodrone w/ Omega & beo = 7.0
+Daemon w/ Kaszatah = 4.7 + 0.6 * 0.5 = 5.0
+Azure Reaper w/ Kaszatah = 3.6 + 0.4 * 0.5 * 3 = 4.2
+Daemon + Azure Reaper + kaszatah = 5.0 + 0.6 * 4.2 = 7.52
+
+Daemon + Azure Reaper = 4.7 + 0.6 * 3.6 = 6.86
+
+Rifter 60% 2-4 * 6 = 10.8
+Siren = 12.0 + 40% naval
+
+***************************************************************************************************************************************************
+ 
+EPIC Commanders Damage per Stam Ranking 
+
+Firstly this list is for Epics only.
+Credit goes primarily to testing done by the community and collated by Anders(WMAnalyser) and Victor Viera (WM for Dummies 101)
+
+Some commanders will appear on this list multiple times due to bonuses against certains bosses or different reinforcement options.
+With reinforcement options I have endeavoured to supply a best option (usually involving WC units) and a lesser reinforcement option with an easily available unit.
+Please note that some units will use reinforcements that are unique so not all entries on the list are compatible in the same force.
+
+I have included an entry for Robotic Units with their effective dps in an Omega Vindicator force & Xeno Units with their effective dps in an Apex Vindicator force. 
+I have not yet done this for the other vindicators due to these being the only viable choices for Epics.
+although I am aware of a lower damage but better ratio Bloodthirty Vindicator force with Malgoth for Typhons.
+
+https://spreadsheets.google.com/ccc?key=0ApJxTXE9SNihdGVoZDZIeHI0UklhSF9IZ09feTdxZlE&hl=en&authkey=CIHBnN0E
+
+Commanders
+32.75	Ascaris vs Behemoth	w/ Malgoth			3.25 + 10 AH + 19.5 Behe		50 WC
+28.77	Ascaris vs Sentinel	w/ Malgoth			3.25 + 9.92 AH + 15.6 Sent		50 WC
+27.5	Ascaris	vs Behemoth						2.5 + 10 AH + 15 Behe			50 WC
+24.42	Ascaris vs Sentinel						2.5 + 9.92 AH + 12 Sent			50 WC
+24.4	Vile vs Asphodel Vanguard				9.1 + 15.3AH					Behemoths (51% Jam Assualt)
+19.3	Valentina vs Apshodel Vanguard			3.7 + 15.6 AH 					50 WC (52% Control Infantry)
+18.6	Dyson vs Asphodel Vanguard				3.9 + 14.7 AH					4% chance at 40WC a pop = MAX 480 WC (49% Jam Assualt)
+18.4	Halcyon + 4 Jet Trooper + 4 Thrasher	52.5% Infantry x4 (4.6) 		Asphodel Missions + 100 WC (Jet Troopers arent attainable anymore. Jet Trooper + Thrasher = 4.6 DPS)
+14.0	Terrogor + Rifter & (DS>Dmn>GT) w/ Apex	1.6 + 40% Flying x2				Asphodels + 100k CR + Collections + 25 WC
+13.35	FM Riggs + 2 PW w/ Omega				2.35 + 47% Robotic x2 (11.7)	Wasteland Missions + Vindicator
+12.9	Siren with Admiral Helo					11.9 + 37% Naval x1 (2.8)		Krakens + 50 WC (Helo requires 3 naval)
+12.8	Siren with Razor						11.9 + 37% Naval x1 (2.5)		Krakens
+12.2	Terrogor + Rifter + (DS + Daemon + GT)	1.6 + 40% Flying x2				Asphodels + 100k CR + Collections + 25 WC
+11.9	Siren with No Reinf						11.9							Krakens
+10.86	Kaya + DS + Daemon + GT	w/ Apex			2.2 + 45% of Flying				50 WC + 25 WC + Collections (Dreadship requires 3 flying units to do damage)
+10.8	Field Marshall Riggs + 2 Photon Walker	2.35 + 47% Robotic x2 (9.0)		Wasteland Missions
+10.05	Kaya + DS + Daemon + XMS w/ Apex		2.2 + 45% of Flying				50 WC + Collections 
+9.67	Kaya + Dreadship + Rifter				2.2 + 45% of Flying				50 WC + Behemoths + 100k CR (Dreadship requires 3 flying units to do damage)
+9.3		Raiden (w/ 3x Arc Trooper in force)		6.9 + 2.4AH						50 WC + 75 WC; Requires 3x Arc Troopers in force (3.8 each) 
+9.1		Vile									9.1								Behemoths
+8.86	Kaya + Dreadship + Daemon + GT			2.2 + 45% of Flying				50 WC + 25 WC + Collections (Dreadship requires 3 flying units to do damage)
+8.24	Kaya + Dreadship + Daemon + XMS			2.2 + 45% of Flying				50 WC + Collections 
+7.98	Siege Comm Halcyon + 4 Arc Trooper		52.5% Infantry x4 (3.8) 		Asphodel Missions + 100 WC
+7.96	Terrogor + Tiamat + (DS + Daemon + XMS)	1.6 + 40% Flying x2				Asphodels + 100k CR + Collections 
+7.78	Kaya + Dreadship + Thrasher				2.2 + 45% Flying				50 WC + Behemoths + 25 WC 
+7.6		Terrogor + Thrasher * 2					1.6 + 40% Flying x2				Asphodels + 50 WC
+7.54	Dracorex with Infestor Tank	w/ Malgoth	3.6 + 37% BT x1 (6.0) + 30%		50 WC
+7.29	Dracorex with Ravager AH w/ Malgoth		3.6 + 37% BT x1 (6.3) + 30%		50 WC (Ravager 2.5DPS only gets boosted by Malgoth; not the 3.8AH)
+6.78	Broodmother + 3 Inf Tanks w/ Malgoth	29% BT x3 (6.0) + 30%			Blightlands Missions
+6.62	Malort vs Healing Bosses w/ Malgoth		1.4 + 30% + 4.8 AH				50 WC (damage only gets boosted by Malgoth)
+6.2		Malort vs Healing Bosses				1.4 + 4.8 AH					50 WC
+6.13	Broodmother + 3 Ravagers AH /w Malgoth	29% BT x3 (6.3) + 30%			Blightlands Missions (Ravager 2.5DPS only gets boosted by Malgoth; not the 3.8AH)
+5.93	Dracorex with Ravager AH				3.6 + 37% Bloodthirsty x1 (6.3)	50 WC
+5.9		Oracle vs Behemoth NO Ascaris			2.0 + 3.9						Pantheon Missions
+5.8		Dracorex with Infestor Tank				3.6 + 37% Bloodthirsty x1 (6.0)	50 WC
+5.57	Kaya + Thrasher							2.2 + 45% Flying				50 WC + 25 WC
+5.5		Oracle vs Behemoth w/ Ascaris			2.0 + 3.5						Pantheon Missions
+~5.5	Maion vs Typhon (see Notes)				3.15 + Anti-Jams				Sentinels
+5.5		Broodmother + 3 Ravagers AH				29% BT x3 (6.3)					Blightlands Missions
+5.25	Siege Comm Halcyon + 4 Peacekeeper		52.5% Infantry x4 (2.5) 		Asphodel Missions
+5.2		Broodmother + 3 Infestor Tanks			29% BT x3 (6.0)					Blightlands Missions
+5.1		Butcher vs Healing Bosses				5.1 AH							Collections
+4.68	Dracorex with no Reinf w/ Malgoth		3.6 + 30%						50 WC
+4.6		Thaddius vs Asphodel Vanguard			0.4 + 4.2AH						Early Missions
+4.3		Oracle vs Sentinel NO Ascaris			2.0 + 2.3						Pantheon Missions
+4.2		Isabelle + Anvil						1.3 + 25% Armoured x1 (11.7)	50 WC + Behemoths
+4.16	Bloody Mary + Infester Tank	/w Malgoth	1.4 + 30% BT x1 (6.0) + 30%		50 WC (No longer attainable)?
+4.1		Kaya + Tiamat/Hatchet					2.2 + 45% Flying x1 (4.2)		50 WC + Collections or 25 WC
+3.93	Oracle vs Sentinel w/ Ascaris			2.0 + 1.93						Pantheon Missions
+3.93	Bloody Mary + Ravager /w Malgoth		1.4 + 30% BT x1 (6.3) + 30%		50 WC (No longer attainable)? (Ravager 2.5DPS only gets boosted by Malgoth; not the 3.8AH)
+3.9		Dyson									3.9								4% chance at 40WC a pop = MAX 480 WC WC
+3.9		Octane w/ Omega							3.0 + 30% average				50 WC
+3.9		Vyander w/ Apex							3.0 + 30% average				50 WC
+3.7		Valentina NOT Asphodel Vanguard			3.7								50 WC
+3.6		Dracorex with no Reinf					3.6								50 WC
+3.3		Bloody Mary + Ravager AH				1.4 + 30% BT x1 (6.3)			50 WC (No longer attainable)?
+3.25	Ascaris w/ Malgoth						2.5 + 30%						50 WC 
+3.25	Dementia w/ Malgoth						2.5 + 30%						50 WC 
+3.2		Bloody Mary + Infester Tank				1.4 + 30% BT x1 (6.0)			50 WC (No longer attainable)?
+3.15	Kaya + Xeno Interceptor					2.2 + 45% Flying x1 (2.1)		50 WC
+3.15	Maion									3.15							Sentinels
+3.12	Skullkeeper w/ Omega					2.4 + 30% average				Caverns Missions + Vindicator
+3.0		Octane									3.0								50 WC
+3.0		Vyander									3.0								50 WC
+2.86	Kaya with no Reinf w/ Malgoth			2.2	+ 30%						50 WC
+2.8		Admiral Helo							2.8								50 WC
+2.8		Dalia									2.8								50 WC
+2.5		Alaric									2.5								50 WC
+2.5		Dementia								2.5								50 WC
+2.5		Ascaris									2.5								50 WC
+2.4		Skullkeeper								2.4								Caverns Missions
+2.4		Raiden with no Arc Troopers(AH only)	2.4AH							50 WC
+2.3 	Mayumi									2.3								1000 Combat Rating
+2.2		Kaya with no Reinf						2.2								50 WC
+2.1		Magistrate								2.1								Rare drop from Last 'Spire' Mission
+2.1 	Bellonna								2.1								50 WC
+2.08	Bianca w/ Malgoth						1.6 + 30%						50 WC
+2.0		Oracle against non Sent/Behe			2.0								Pantheon Missions
+2.0		Boris									2.0								Arena
+2.0 	Ajax									2.0								50 WC
+1.82	Bloody mary no reinf w/ Malgoth			1.4 + 30%						50 WC (No longer attainable)?
+1.82	Malort No AH w/ Malgoth					1.4 + 30%						50 WC (No longer attainable)?
+1.8		Creed									1.8								50 WC
+1.7 	Ryoko									1.7								50 WC (Also increases flying damage by ~19.5% overall)
+1.6 	Bianca									1.6								50 WC
+1.4		Malort against bosses that dont heal	1.4								50 WC
+1.4		Bloody Mary with no Reinf				1.4								50 WC (No longer attainable)?
+1.3		Isabelle with no Reinf					1.3								50 WC
+1.25	Hydraulis + Arc Trooper					30% Infantry					50 WC + 25 WC (Also increases infantry damage by ~3% overall; unit called in always gets +10%)
+1.2 	Duncan									1.2								50 WC
+1.0 	Atlas									1.0								50 WC
+0.82	Hydraulis + Peacekeeper					30% Infantry					50 WC (Also increases infantry damage by ~3% overall; unit called in always gets +10%)
+0.8 	Aiko									0.8								50 WC
+0.4		Thaddius: non Asphodel Vanguard			0.4								Early Missions
+
+Kaya
+
+NOTES.
+Dyson can be Expensive, YIKES!
+Raiden is also very expensive, and not worth it now that we have access to free Infestor Tanks and Photon Walkers. He was Excellent for a long time.
+Ascaris is heinously strong in Behemoths and Sentinels due to the ability to control a Bloodthirsty unit 50% of the time. Not only does this effectively reduce the amount healed by 10
+it also supplies about 15 extra damage per stam from the controlled unit.
+Oracle is strong versus Behemoths and Sentinels due to her damage per bloodthirsty ability, however if you have Ascaris in your force aswell your Oracle will 
+be slightly weaker as 50% of the time there will be 1 less BT unit.
+Maion gains a subtle boost in Typhons by preventing some jams on your early force units. This is force dependant but can be roughly guesstimated at about an additional 2-3 dps
+Octane, Vyander, Aiko, Dementia, Attila and a few other commanders that provide healing can improve your ratio for Typhons aswell.
+
+If I'm missing anything please let me know. All feedback is welcome.
+
+***************************************************************************************************************************************************
+
+EPIC Assualt Units Damage per Stam Ranking 
+
+Firstly this list is for Epics only.
+Credit goes primarily to testing done by the community and collated by Anders(WMAnalyser) and Victor Viera (WM for Dummies 101)
+
+Some units will appear on this list multiple times due to bonuses against certains bosses or different reinforcement options.
+With reinforcement options I have endeavoured to supply a best option (usually involving WC units) and a lesser reinforcement option with an easily available unit.
+Please note that some units will use reinforcements that are unique so not all entries on the list are compatible in the same force.
+
+I have included an entry for pertinent units with their effective dps in an Omega\Apex\Malgoth Vindicator force as these are viable Epic options.
+Please note the list does not currently contain every single assualt unit in WM. 
+This list contains all relevant units to anyone whos at the stage where they would want to use that list.
+The rest (most of which are unusable anyway) will be added later.
+
+https://spreadsheets.google.com/ccc?key=0ApJxTXE9SNihdG4yQk5wWTY4Q3VzUU5pb01tQS15Q1E&hl=en&authkey=CKXFncMK
+
+Assault
+32.5	Blight Crusher vs Asp Vang			2.5 + 30 AH				PvP Tokens (50% Jam Infantry x2)
+27		Alpha Mech vs Typhon				3.0 + 24 AH				Typhons (50% Jam Armoured x2)
+27		Gunjack /w 2 Marksman vs Asp Vang	5.1 + 21.9 AH			25 WC + 50 WC (73% Jam Infantry) (9.8 Slot)
+22.8	Annelid Mass vs Asp Vanguard		4.8 + 18 AH				Arena (60% Jam Assualt)
+22.68	Obsidian vs Asp Vanguard			6.38 + 12 AH			60k CR (54% Jam Assualt)
+19.8	Orbo vs Asphodel Vanguard			1.8 + 18 AH				Collections (60% Jam Assualt)
+19.76	Bezerker vs Asphodel Vanguard		4.16 + 15.6 AH			Sentinels (52% Jam Infantry)
+18.1	Gun Raven w/ Raven Hawk				18.1					Titans  (10.9 damage per slot)
+18.8	XMS vs Asphodel Vanguard			6.5 + 12.3 AH			Xeno Motherships / Krakens (41% Control Assualt)
+18.1	Tremor Wyrm vs Asphodel Vanguard	6.1 + 12 AH				Tremor Wyrms (40% Jam Assualt)
+16.9	Trap Setter vs Apshodel Vanguard	1.6 + 15.3 AH			~125 WC (Xeno Pack @ 20 WC 20% Chance) (51% Jam Assualt)
+16.6	Dreadship + Rifter					4.9 + 100% Flying		Behemoths (Dreadship Requires 1 more flying unit to do damage)
+14.8	Dreadship + Daemon + GT				4.9 + 100% Flying		Behemoths + Titans + 25 WC(Dreadship Requires 1 more flying unit to do damage)
+14.0	Trident vs Typhon					2.0 + 12 AH				25 WC (50% Jam Armoured)
+13.43	Dreadship + Daemon + XMS			4.9 + 100% Flying		Behemoths + Titans + XMS/Krakens
+13.2	Muon Walker vs Asphodel Vanguard	1.2 + 12 AH				Asphodels (40% Jam Assualt)
+13.2	Moloch vs Asphodel Vanguard			1.2 + 12 AH				~125 WC (Bloodthirsty Pack @ 20 WC 20% Chance) (40% Jam Assualt)
+12.4	Dreadship + Thrasher				4.9 + 100% Flying		Behemoths + 25 WC
+11.7	Photon Walker w/ Omega				9.0 + 30%				Cataclysms
+11.7	Rifter								11.7					100k CR
+11.7	Anvil								11.7					Behemoths
+
+11.6	Quad Rover vs Typon					2.0 + 9.6 AH			Asphodels (40% Jam Armoured)
+10.4	Titan								10.4					Titans (Also 40% Jam Structure x2)
+10.2	Auger Tank AH						6.1 + 4.1 AH			Xeno Power Pack
+9.95	Daemon + Gravity Tank				4.7 + 59% Xeno			Titans + 25 WC
+9.9		Cyclone vs Asphodel Vanguard		0.9 + 9 Ah				25 WC (30% Jam Assualt)
+9.0		Photon Walker						9.0						Cataclysms
+
+8.9		Gravity Tank						8.9						25 WC
+8.7		Juggernaught + Photon Walker		5.1 + 40% Robotic		PVP Tokens + Cataclysms
+8.53	Daemon + XMS						4.7 + 59% Xeno			Titans + XMS
+8.4		Marksman vs Typhon					1.2 + 7.2 AH			25 WC (30% Jam Armoured)
+7.8		Tainted Blade						7.8						Sentinels
+7.56	Lance Rider							7.56					Typhons
+7.5		Thrasher							7.5						25 WC
+7.2 	Kraken								7.2						Krakens
+7.15	Ixnedrone + Gravity Tank			2.7 + 50% Xeno			Sentinels + 25 WC
+6.6		APC + Jet Trooper + Thrasher		2.0 + 100% Infantry		Asphodels + 25 WC (Jet trooper no longer attainable)
+6.5		XMS									6.5						XMS / Krakens
+6.5		Ravager AH							1.5 + 5 AH				Titans
+6.48	Obsidian							6.5						60k CR
+6.1		Tremor Wyrm							6.1						Tremor Wyrms
+6.1		Phaser + Anvil						1.4 + 40% Armoured		25 WC + Behemoths
+6.1		Auger Tank no Anti-Heal				6.1						Xeno Power Pack
+6.0		Enclave Warlord + Gravity Tank		1.85 + 47% Xeno			Xeno Power Pack + 25 WC
+6.0 	Infestor Tank						6.0						Blightlands Missions
+
+5.94	Daemon + Xeno Interceptor			4.7 + 59% Xeno			Titans + XMS
+5.8		APC + Arc Trooper					2.0 + 100% Infantry		Asphodels + 25 WC
+5.6 	Gigas								5.6						Behemoths
+5.5		The Beast AH						3.2 + 2.3 AH			Final Caverns Mission
+2.28	Spine Crawler AH					2.68 + 2.6AH			WC
+5.12	Pelican + Siren + Razor				0 + 40% Commander		Early Collections
+5.1		Juggernaught no Reinf				5.1						PvP Tokens
+5.1		Gunjack w/ 2 Marksmen				5.1						25 WC + 50 WC (2.5 Slot)
+5.0		Exodrone							5.0						Tremor Wyrms / Krakens
+4.9		Vorpal Tank vs Asp Vanguard			0.7 + 4.2				25 WC (14% Jam Infantry)
+4.9		Dreadship no Reinf w/ 2 Flying		4.9						Behemoths
+4.8		Annelid Mass						4.8						Arena
+4.7		Daemon no Reinf						4.7						Titans
+4.6		Jet Trooper + Thrasher				1.6 + 40% Flying		25 + 25 WC
+4.5		APC + Peacekeeper					2.0 + 100% Infantry		Asphodels
+4.5		Brood Walker  AH					2.5 + 2 AH				WC
+4.4		Pyro Rig w/ Boris					4.4						Arena Tokens
+4.3		Tiamat								4.3						Early Mission Collections
+4.2		Hatchet								4.2						25 WC
+4.2		Havoc								4.2						25k CR + 50% Jam Commander
+4.16	Hellion w/ Omega AND/OR Boewulf		2.06 * 2 				Wasteland Missions (effects dont stack)
+4.16	Bezerker							4.16					Sentinels
+4.06	Poseidon							4.06					Final Triton Deeps Mission
+4.0 	Nightstalker 						4.0						10k CR
+3.8		Arc Trooper							3.8						25 WC
+3.7		Razor Hawk w/ Gun Raven				3.7						Krakens	(10.9 damage per slot)
+3.4		Blinding Apprentice					3.4						WC
+3.3		Manta								3.3						25 WC
+3.3		Revolver							3.3						25 WC
+3.2		The Beast no AH						3.2						Final Caverns Mission
+3.2		Sneaky Brute						3.2						WC
+3.1		Sand Crawler						3.0						Titans
+3.05	Heartripper AH						1.56 + 1.49				25 WC
+3.0		Alpha Mech							3.0						Typhons
+3.0		Carbine								3.0						Asphodel Missions
+3.0		Plague Duster AH					0.4 + 2.6AH				25 WC
+3.0		Abomination							3.0						25 WC
+3.0		Gunrunner							3.0						Wasteland Missions
+2.9		Valkyrie							2.9						2000 CR
+2.75	Vigil + Peacekeeper					1.5 + 50% Righteous		Purged Blight Missions
+2.7		Ixnedrone no Reinf					2.7						Sentinels
+2.68	Spine Crawler no AH					2.68					WC
+2.52	Sawblade AH							0.84 + 1.68AH			25 WC
+2.5		Blight Crusher						2.5						PvP Tokens
+2.5		Peacekeeper							2.5						Purged Blight Missions
+2.5		Razor								2.5						Triton Deeps Missions
+2.5		Seraph								2.5						Pantheon Missions
+2.5		Jet Trooper Chain (3+)				1.6 + 40% Flying		No Longer Purchaseable
+2.5		Brood Walker no AH					2.5						WC
+2.47	Cupid								2.47					25 WC
+2.4		Lacerator							2.4						Blightlands Missions
+2.34	Reshaper Tank						2.34					Sentinels Drop
+2.3		Knight								2.3						Pantheon Missions
+2.18	Phaser Chain (3+)					1.4 + 40% Armoured		75 WC+
+2.1		Xeno Interceptor					2.1						XMS's
+2.08	Hellion								2.08					Wasteland Missions
+2.0		Trident								2.0						25 WC
+2.0		Quad Rover							2.0						Asphodels
+2.0		Barracuda							2.0						Cataclysms
+1.92	Raven								1.92					Sentinels Drop
+1.88	Xeno Mauler							1.88 					Arena (47% Control Robotic)
+1.85	Enclave Warlord No Reinf			1.85					~125 WC Xeno Pack (25WC @ 20% chance)
+1.81	Hunter								1.81					25 WC
+1.8		Chimera								1.8						Chimeras
+1.8		Hornet								1.8						XMS's
+1.8		Orbo								1.8						Early Missions Collections
+1.6		Jet Trooper No Reinf				1.6						No Longer Purchaseable
+1.6 	Trap Setter							1.6						~125 WC Xeno Pack (25WC @ 20% chance)
+1.6		Frontline Warrior					1.6						Asphodel Missions (40% Jam Structure)
+1.6		Bolide Walker						1.6						Krakens
+1.56	Heartripper no AH					1.56					25 WC
+1.5		Ravager no AH						1.5						Titans
+1.5		Vigil No Reinf						1.5						Purged Blight Missions
+1.4		Reaper								1.4						Tremor Wyrms
+1.4 	Phaser No Reinf						1.4						25 WC
+1.3		Sabre								1.3						Hatchling Swarms; Chimeras; Tremor Wyrms
+1.3		Mechwalker							1.3						Hatchling Swarms; Chimeras; Tremor Wyrms
+1.2		Marksman							1.2						25 WC (2.5 Slot with Gunjack)
+1.2		Muon Walker							1.2						Asphodels
+1.2 	Moloch								1.2						~125 WC Bloodthirsty Pack (25WC @ 20% chance)
+1.1		Dominated Hatchlings				1.1						Hatchling Swarms
+0.92	Pelican + Mayumi					0 + 40% Commander		Early Missions Collections
+0.9		Cyclone								0.9						25 WC
+0.84	Sawblade No AH						0.84					25 WC
+0.7		Vorpal Tank							0.7						25 WC
+0.4		Plague Duster NO AH					0.39					25 WC
+
+NOTES:
+This list has been split into 4 sections.
+ * The sub 6.0 List - everything thats less effective than an Infestor Tank - a readily avaliable unit from missions in the Blightlands
+ * The 6.0 - 9.0 List - Everything between an Infestor Tank and an unboosted Photon Walker - a moderately easy to gain unit starting from level 50 in Cataclysm Events
+ * The 9.0 - 11.7 List - Everything between an unboosted Photon Walker and an Omega Boosted Photon Walker or Anvil - These become available in behemoths, or once you have a competitive Vindicator formation
+ * The 11.7+ List - Everything better than the Anvil standard. Most of these units are unique or gain a special bonus versus certain bosses.
+
+* You might notice that I've listed some reinforcing units w/ their highest reinforcement but they are still less than the value of the reinforced unit. This is common with assualt units and its often better to just use the better unit.
+The ONLY 2 reinforcement units you will probably use at some point are Dreadship and Daemon. Please remember Dreadship requires 2 other Flying units to deal its damage.
+* Gun Raven and Razor Hawk was a pretty dominant combo for a while but averages only 10.9 per slot which is below Omega boosted PWs or Anvils. Therefore they arent commonly used in Epics anymore but are still not bad for PVP
+* Gunjack + Marksmen is a pretty good combo for PVP however even with their boosts against Typhons and Asphodels you should have better units to bring in by then.
+* Quad Walker looks like it might be worse than Anvil but its important to know that in Typhons your first 6-8 Units will get jammed by the boss. 
+Therefore a Quad Walker will Jam a healer and then be jammed, whereas an Anvil will just do no damage!
+
+If I'm missing anything please let me know. All feedback is welcome.
+
+Keep
+Posiedon 4.06 + 31% Jam Flying + 44% Jam Structure
+Gun Runner 3.0 + 50% Jam Robotic
+Cupid 2.47 + 49% Jam Bloodthirsty
+ExoDrone 5 + 100% Jam Commander
+Chimera 1.8 + 30% Jam Flying
+Reaper 1.4 + 47% Jam Flying
+Barracuda 2 + 50% Jam Structure
+Havoc 3.36 + 25% Jam Commander
+Tempest 0 + 50% Jam Flying
+Cerberus 0 + 26% Jam Robotic
+Navy Spec Ops 0 + 50% Jam Naval
+Impulse Walker 1.4 + 35% Robotic
+Echo Hunter 1.4 + 40% Jam Naval
+Tremor Hunter 2 + 45% Jam Xeno
+Grinder 0.87 + 45% Jam Structure
+
+Aquabat	0	34%	Subsurface Blast	34%	0-0			
+Shell Stalker	0	35%	Piercing Shot	35%	0-0			
+Goliath	0	61%	Vengeance	36%	0-0	Rally Cry	39%	0-0
+Wing Stalker	0	36%	Thermal Seekers	36%	0-0			
+Shock Grunt	0	39%	Slaughter	39%	0-0			
+Cannon Walker	0	40%	Hammer Drop	40%	0-0			
+Immortal	0	40%	Fortification	40%	0-0			
+Tempest	0	50%	Sonic Jamming	50%	0-0			
+Exosoldier	0.3	31%	Cover Fire	31%	1-1			
+Dread Panzer	0.4	9%	Ionic Blast	9%	3-7			
+Marauder	0.5	25%	Onslaught	25%	1-3			
+Neocyte Guard	0.5	25%	Neocyte Barrier	25%	1-3			
+Infiltrator	0.7	22%	Concussive Blast	22%	2-4			
+Bazooka Marine	0.7	24%	Concussive Blast	24%	2-4			
+Dreadnaught	0.8	20%	Trample	20%	2-6			
+Hyperion Prototype	0.9	30%	Concussive Blast	30%	2-4			
+Stormrunner	1	25%	Gun Hail	25%	2-6			
+Piranha	1	49%	Siphon	49%	1-3			
+Bonestalker	1	50%	Siphon	50%	1-3			
+Daedalus Tank	1.2	25%	Ionic Blast	25%	3-7			
+Spectre	1,5	50%	Aerial Blast	50%	2-4			
+Hydra	1.5	30%	Heavy Fire	30%	3-7			
+Vampire	1,5	51%	Leech	51%	2-4			
+Dune Runner	1.8	30%	Assault	30%	3-9			
+Hornet Drones	1.8	45%	Stingshot 45%	2-6			
+Gore Crawler	1.9	39%	Blood Schism	39%	3-7			
+Hydroblade	1.9	49%	Strike	49%	2-6			
+Piranha X3	2	75%	Siphon	50%	1-3	Feeding Frenzy	50%	1-3
+Hornet Drones X3	2.4	67%	Stingshot 45%	2-6	Swarm	40%	1-3
+Phoenix	2.5	50%	Aerial Blast	50%	3-7			
+Hierophant	2.6	51%	Conviction	51%	3-7		
+	
+***************************************************************************************************************************************************
+
+EPIC Structures Damage per Stam Ranking 
+
+Firstly this list is for Epics only.
+Credit goes primarily to testing done by the community and collated by Anders(WMAnalyser) and Victor Viera (WM for Dummies 101)
+
+Some structures will appear on this list multiple times due to bonuses against certains bosses or different reinforcement options.
+With reinforcement options I have endeavoured to supply a best option (usually involving WC units) and a lesser reinforcement option with an easily available unit.
+Please note that some units will use reinforcements that are unique so not all entries on the list are compatible in the same force.
+
+I have included an entry for Robotic Structures with their effective dps in an Omega Vindicator force. 
+
+https://spreadsheets.google.com/ccc?key=0ApJxTXE9SNihdGhjOWYxYU10bWNmWUN4bzh0Vmd6M1E&hl=en&authkey=CMfL5n0
+
+Structures
+19.24	Island LP + DS + Dmn + GT w/ Apex	100% Flying				25 WC + Behemoths + Titans + 25 WC (Dreadship requires 3 flying units to do damage)
+19.24	Warp Tun + DS + Dmn + GT w/ Apex	100% Xeno				25 WC + Behemoths + Titans + 25 WC (Dreadship requires 3 flying units to do damage)
+19.0	Viral Cluster vs Asphodel Vanguard	4.0 + 15AH				Titans
+18.75	Prometheus + 2 Anvils 				9.74 + 38.5% Assault x2	Final Asphodel Mission + Behemoths
+18.07	Island LP + DS + Rifter w/ Apex		100% Flying				25 WC + Behemoths + 100k CR (Dreadship requires 3 flying units to do damage)
+18.07	Warp Tun + DS + Rifter w/ Apex		100% Xeno				25 WC + Behemoths + 100k CR (Dreadship requires 3 flying units to do damage)
+17.98	Island LP + DS + Dmn + XMS w/ Apex	100% Flying				25 WC + Behemoths + Titans + XMS
+17.98	Warp Tun + DS + Dmn + XMS w/ Apex	100% Xeno				25 WC + Behemoths + Titans + XMS
+16.6	Island Launchport + DS + Rifter		4.9 + 11.7				25 WC + Behemoths + 100k CR (Dreadship requires 3 flying units to do damage)
+16.6	Warp Tunnel + DS + Rifter			4.9 + 11.7				25 WC + Behemoths + 100k CR (Dreadship requires 3 flying units to do damage)
+14.8	Island Launchport + DS + Dmn + GT	100% Flying				25 WC + 25 WC + Various Collections (Dreadship requires 3 flying units to do damage)
+14.8	Warp Tunnel + DS + Dmn + GT			100% Xeno				25 WC + 25 WC + Various Collections (Dreadship requires 3 flying units to do damage)
+14.46	Blockade 							14.46					Asphodels
+13.87	Island LP + DS + Thrasher w/ Apex	100% Flying				25 WC + Behemoths + 25 WC (Dreadship requires 3 flying units to do damage)
+13.87	Warp Tun + DS + Thrasher w/ Apex	100% Xeno				25 WC + Behemoths + 25 WC (Dreadship requires 3 flying units to do damage)
+13.83	Island Lauchport + DS + Dmn + XMS	100% Flying				25 WC + Various Collections (Dreadship requires 3 flying units to do damage)
+13.83	Warp Tunnel + DS + Dmn + XMS		100% Xeno				25 WC + Various Collections (Dreadship requires 3 flying units to do damage)
+13.1	Skycom NeuroCore + PW w/ Omega		4.7 + 59% Robotic + 30%	Titan + Cataclysms
+12.9	Harbor Comm + Siren + Admiral Helo	100% Naval				25 WC + Krakens + 50 WC
+12.8	Harbor Comm + Siren + Razor			100% Naval				25 WC + Krakens
+12.4	Island Lauchport + DS + Thrasher	100% Flying				25 WC + Behemoths + 25 WC (Dreadship requires 3 flying units to do damage)
+12.4	Warp Tunnel + DS + Thrasher			100% Xeno				25 WC + Behemoths + 25 WC (Dreadship requires 3 flying units to do damage)
+11.9	Harbor Comm + Siren + No Reinf		100% Naval				25 WC + Krakens
+11.7	Assembly Plant + Anvil  			100% Armoured			25 WC + Behemoths
+11.7	Island Lauchport + Rifter			100% Flying				25 WC + 100k CR
+11.7	Machine Mill + PW x2 w/ Omega		50% Robotic x2			25 WC + Cataclysms
+11.57	Warp Tunnel + Gravity Tank w/ Apex	100% Xeno				~125 WC (25 WC Xeno Pack @ 20% Chance) + 25 WC
+11.2	Artillery Encampment 				11.2					Sentinels
+10.1	Skycom NeuroCore + Photon Walker	4.7 + 59% Robotic		Titan + Cataclysms
+10.1	Quake Generator vs Asphodel 		1.1 + 9AH				25 WC (Jams Assualt @30% chance)
+9.74	Prometheus No Reinf					9.74					Final Asphodel Mission
+9.1		Fission Charge 						9.1						Final Blightlands Mission
+9.0		Machine Mill + Photon Walker x2		50% Robotic x2			25 WC + Cataclysms
+8.9		Mortar Bunker						9.0						~150 WC (25 WC Rage Pack @ 16% Chance)
+8.9		Warp Tunnel + Gravity Tank			100% Xeno				~125 WC (25 WC Xeno Pack @ 20% Chance) + 25 WC
+8.8		Orbital Cannon vs Asphodel Vang		1.3 + 7.5AH				Final Spire Mission (Jams Infantry @25% chance)
+7.8		Bloodpool + Inf Tank w/ Malgoth		100% Bloodthirsty + 30%	25 WC
+7.5		Island Launchport + Thrasher		100% Flying				25 WC + 25 WC
+7.2		Command Center vs Typhon 			0 + 7.2 AH				200 CR (Jams Armoured @ 30% chance)
+7.05	Bloodpool + Ravager	AH w/ Malgoth	100% Bloodthirsty + 30%	25 WC (Only the 2.5 DPS component gets boosted by Malgoth; the Anti Heal is unaffected)
+6.46	Tesla Cannon vs Typhon 				0.7 + 5.76AH			25 WC (Jams Armoured @ 24% chance)
+6.3		Skycom w/ Omega						4.7 + 30%				Collections (Requires 4 robotics)
+6.3		Skycom NeuroCore w/ Omega noRein	4.7 + 30%				Titans			
+6.3		Bloodpool + Ravager	AH				100% Bloodthirsty		25 WC
+6.0		Bloodpool + Infestor Tank			100% Bloodthirsty		25 WC
+5.94	Island Launchport + Daemon + XI		100% Flying				25 WC
+5.94	Warp Tunnel + Daemon + XI			100% Xeno				25 WC
+4.7		Skycom								4.7						Collections (Requires 4 robotics)
+4.7		Skycom NeuroCore No Reinf			4.7						Titans			
+4.0		Viral Cluster AH Only				4.0						Titans
+3.8		Drop Pod + Arc Trooper				100% Infantry			25 WC + 25 WC
+2.8		Harbor Command + Admiral Helo		100% Naval				25 WC + 50 WC (Helo requires 3 naval)
+2.75	Adytum + 2 Peacekeeper				55% Righteous x2		Final Purged Blight Mission
+2.73	Bulwark w/ Malgoth					2.1 + 30%				~125 WC (25 WC Bloodthirsty Pack @ 20% Chance)
+2.7		Poseidon Engine w/ Poseidon			2.7						Krakens
+2.5		Harbor Command + Razor				100% Naval				25 WC
+2.1		Island Lauchport + XI				100% Flying				25 WC
+2.1		Warp Tunnel + XI					100% Xeno				25 WC
+2.1		Bulwark								2.1						~125 WC (25 WC Bloodthirsty Pack @ 20% Chance)
+2.0		Pantheon							2.0						Tremor Wyrm & XMS
+1.97	Cloning Lab + Arc Trooper			52% Infantry			25 WC																
+1.8		Missile Silo						1.8						Tremor Wyrm & XMS
+1.7 	Xeno Singularis						1.7						40k CR
+1.3		Cloning Lab + Peacekeeper			52% Infantry			25 WC																
+1.3		Orbital Cannon						1.3						Final Spire Mission (Jams Infantry @25% chance)
+1.3		Olympian Monolith					1.3						25 WC (Jams Robotic @34% chance)
+1.25	Sanctuary + Peacekeeper				50% Righteous			25 WC
+1.2		Gunpod								1.2						Mission?
+1.1		Quake Generator						1.1						25 WC (Jams Assualt @30% chance)
+1.0		Thermite Bunker						1.0						Barracks
+0.7 	Tesla Cannon						0.7						25 WC
+0.6		Asylum								0.6						25 WC
+0		Command Center No Typhon			0						2000 CR (Jams Armoured @ 30% chance)
+
+NOTES.
+Poseidon Engine is not likely to be worth it as Poseidon isn't generally run anymore due to its harsh requirements and low damage vs epics
+Prometheus gains a subtle boost in Typhons by preventing a jam on your early force units. This is force dependant but can be roughly guesstimated at about an additional 1-2 dps
+Skycom will increase your ratio slightly on Typhons thanks to its healing (2.4 hps)
+Asylum in a Bloodthristy force provides decent healing to assist improving your ratio on Typhons
+
+If I'm missing anything please let me know. All feedback is welcome.
+
+***************************************************************************************************************************************************
+
+EPIC Vindicator, Boost & Reinforcements Damage per Stam Ranking 
+
+Firstly this list is for Epics only.
+Credit goes primarily to testing done by the community and collated by Anders(WMAnalyser) and Victor Viera (WM for Dummies 101)
+
+Some units will appear on this list multiple times due to bonuses against certains bosses or different reinforcement options.
+With reinforcement options I have endeavoured to supply a best option (usually involving WC units) and a lesser reinforcement option with an easily available unit.
+Please note that some units will use reinforcements that are unique so not all entries on the list are compatible in the same force.
+
+https://spreadsheets.google.com/ccc?key=0ApJxTXE9SNihdEUxSGZ1QlkyRWtBQlNEZ29VOHRUelE&hl=en&authkey=CMHYs7AE
+
+Vindicator
+**********
+29.4	Omega vs Asphodel				+30% Robotic Increase (58% Jam Assault)
+27.8	Apex vs Apshodel				+30% Xeno Increase + 58% Control Assualt
+25.8	Malgoth vs Healing Bosses		+30% Bloodthirsty Increase
+15.7	Nimbus + Tiamat + Hatchet		+30% Flying Increase + 28% Reinf Flying x2
+13.8	Benediction						+30% Righteous Increase + 64% Prevent 2 Jams
+13.5	Malgoth non Healing				+30% Bloodthirsty Increase
+14.3	Nimbus no Reinf					+30% Flying Increase
+14.3	Omega							+30% Robotic Increase 
+10.4	Apex							+30% Xeno Increase + 58% Control Assualt
+
+NOTES
+
+Omega + Robotics is the most recommended Vindicator for epics due to the high number of quality robotic Commanders, Assualt Units & Structures.
+Apex + Xenos can also be viable, with Gravity Tanks and Warp Tunnels and can double as a popular PVP Vindicator due to the high quality PVP Xeno Units
+Malgoth + Bloodthirsty is very strong in PVP and can also be used to create a lower damage, but very high damage done -> Taken ratio for Typhons
+Nimbus + Flying is just not quite good enough for PVP and epics due to there being not quite enough good flying units. A non unique decent flying assualt unit is all it would take to make this viable.
+Benediction + Righteous isn't viable for anything as far as I can tell. No good Righteous units at all really. Please feel free to prove me wrong though.
+
+Benediction gains a slight boost vs Typhons due to the Jam Prevention, but your mental if your trying a righteous force with Bene vs a Typhon :P
+It is recommended that you total the average DPS of your optimum Vindicator and non Vindicator formations to weigh up which may be a better option for your target epic.
+Eagerly awaiting an Armoured Vindicator, Anvils Pew Pew!! 
+Naval Vindicator doesn't have the unit support to be worth bringing in atm.
+Infantry Vindicator could be interesting to bring in but I doubt it would top Omega or Apex.
+
+Vindicator 5-15-5-1	(6-16-6)
+4 Fire
+60 Prestige
+60 Arena
+20 Cataclysm
+
+Annihilator 5-18-7-1 (6-20-8)
+4 Fire
+40 Prestige
+20 Arena
+15 Cataclysm
+
+Obliterator 6-22-10-1 (7-24-10)
+8 Sentinel
+50 Prestige
+30 Protector
+
+Swarm Vindicator 7-24-11-1 (8-26-12)
+8 Vanguard
+50 Prestige
+30 Asphodel
+
+Reinforcements
+**************
+16.99	Xenobombers  		300	 in battle		(XMS and Tremor Wyrm Only)
+15.00	Fortified Cannons  	1000 in battle		(XMS Only)
+14.85	Rail Cannon  		100	 in battle		(Chimera, Cataclysm, Behemoth, Sentinel, Asphodel Vanguard)
+9.17 	Gatling Gun  		20   in battle		(All Epics)
+
+NOTES
+Your never really going to notice these in comparison to your force damage but its nice to know
+
+Boosts
+******
+All Boosts last for 24 hours
+
+12.64	Fortification + 2 AssPlant + 2 Anvil	Barracks + 50WC + Behemoths
+10.4	BioInterference	vs Healing Bosses		15 WC
+5.88	Fulmination								25 WC
+4.64	Leadership + Siren + Razor				25 WC
+4.32	Fortification + 2 Viral Clusters		Barracks + Titans
+3.35	Cruise Missiles 						Barracks
+1.94	Fortification + 2 Missile Silos			Barracks + Tremor Wyrms / XMS
+0.82	Leadership + Mayumi						25 WC
+
+NOTES
+Medic Rush from the barracks grants 9.92 HPS to help improve your ratio on Typhons
+Leaderships isnt really worth the WC as its value is really dependant on which 6-8 commanders you pick out for your formation. 
+Its proc rate is low enough that it devalues the commander a lot (as you can see with Siren) and your going to want the best ones in your force already.
+
+
+
+Total to get to Vindi4
+170 Prestige
+50 Kraken
+85 Cataclysm
+8 Fire Cataclysm
+30 Protector
+8 Sentinel
+50 Asphodel
+15 Vanguard
+100 Typhon
+40 Fallen Prince
+70 Arena
+100 Averill

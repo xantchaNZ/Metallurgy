@@ -1,0 +1,84 @@
+Robotic
+-------
+Photon Walker
+Blitz Armour
+Omega
+Beowulf
+Machine Mill
+Riggs
+Stavron
+Skycom Neuro Core
+
+Armoured
+--------
+Anvil
+Deacon
+Assembly Plant
+Equaliser
+Mammoth Tank
+Sidewinder
+
+Xeno
+----
+Gravity Tank
+Warp Tunnel
+Apex
+Vyander
+Daemon
+Enclave Pylon
+
+Naval
+-----
+Learnean Hydra
+Razor
+Poseidon
+Petrol Rig
+Siren
+Raid Lt Emmanual
+
+Flying
+------
+Thrasher 7.5
+Rifter
+Ryoko
+Kaszatah
+Nimbus
+Terrogor
+Island Launchport
+
+Righteous
+---------
+Rumbler 8.5
+Apollo
+Opak
+Benediction
+Praetor
+Adytum
+Peacekeeper
+Sanctuary
+The Empress
+
+Bloodthirsty
+------------
+Infestor Tank 6.0
+Rancor
+Malgoth
+Dementia
+Asylum
+Gore Crawler
+Blood Pool
+Venomous Raptor
+Broodmother
+
+Infantry
+--------
+Sharpshooter 10.0
+Tactical Infantry 7.5
+Halcyon
+Cassandra
+Boris
+Barracus
+Stormrunner
+APC
+Clone Labs
+

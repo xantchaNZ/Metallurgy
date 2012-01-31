@@ -1,0 +1,349 @@
+24/5 = 375.46(395.85) -> 1877.30(1979.25) per flurry
+30/5 = 392.25(403.05) -> 1961.25(2015.25) per flurry
+08/6 = 401.26(410.86) -> 2006.3(2054.3) per flurry
+07/7 = 438.97 -> 2194.85
+07/7 = 459.53 -> 2297.65 per flurry (Oblit)
+
+Rage Vindicator (10-30-14-1)
+
+Commanders 
+Korvald		21.0
+Siren 		15.2(+ 0.4 * 2.5)[16.2]
+Halcyon		(0.5 * (7.5 * 4))[15]
+Cassandra	(0.5 * (7.5 * 4))[15]
+Deacon		2.5(+ .5 * (12 * 2))[14.5]
+Riggs		2.5(+ .5 * (11.7 * 2))[14.2]
+Stavron 	2.5(+ .5 * (11.7 *2))[14.2]
+Opak		(0.6 * (9.775 * 2)) [11.73]
+Vile		9.0
+Empress		7.0
+
+ = 137.83
+
+Assault
+30 Photon Walker 11.7
+ 
+ = 351
+ 
+Structures
+Prometheus + Anvil * 2 = 11(+ 0.4 * (12 + 12))[20.6]
+Assembly Plant + Mammoth Tank [18.0]
+Blockade 14.5
+Skycom NeuroCore 6.24(+ 0.6 * 11.7)[13.26] 
+Assembly Plant + Sidewinder 12.9
+Beowulf 12.38
+Assembly Plant + Anvil 12.0
+4 Machine Mill + 2PW 11.7 [46.8]
+Artillery Encampment 11.25
+Adytum (0.55 * (9.775 * 2)) [10.75]
+Fission Charge 9.0 
+
+ = 178.19
+ 
+Vindicators & Formation
+Omega	14.3
+Rally 	15.11
+
+Total = 696.43 -> 3482.9 per flurry
+
+30 * .3PW + .3(riggs-PWx2) + .3(StavPWx2) + .3 (SCNC) + .18 SCNC-PW + .6 Omega + 4 * .3 MM(PWx2) + 0.5 Exo
+30*.3[9] + .3 + .3 +.3 + .18 + .6 + 4*.3[1.2] + 0.5 = 12.38 Beowulf
+
+12.38 Beo + .4 * .25 Razor + 2 * 4 * .5 * .25 TIs + 2 * 0.5 * 0.25 Rumblers + 0.4 * (0.5 + 0.3 + 0.3 * 0.6) Terrorgors + 0.4 * 2 * 0.3 Prom Avils + 1 Mamoth Tank + 0.45 Sidewinder + 0.3 AP Anvil
+12.38 + .1 + 1 + 0.25 + 0.392 + 0.24 + 1 + 0.45 + 0.3 = 15.112 RVindi
+
+***********************************************************************************
+
+Rage Vindicator (10-30-14-1)
+
+Commanders 
+
+Korvald		21.0 
+Siren 		15.2(+ 0.4 * 9.66)[19.06]
+Halcyon		(0.5 * (8.625 * 4))[17.25]
+Cassandra	(0.5 * (8.625 * 4))[17.25]
+Deacon		2.5(+ .5 * (13.8 * 2))[16.3]
+Opak		(0.6 * (11.24 * 2))[13.49]
+Riggs		2.5(+ .5 * (10.35 * 2))[12.85]
+Stavron 	2.5(+ .5 * (10.35 *2))[12.85]
+Vile		9.0
+Empress 	7.0
+ = 146.05
+
+Assault
+APC + Equalizer 	2.3 + 23.58 [25.88] 		
+Mammoth Tank 		20.7 			
+Sidewinder 			14.375 			
+27 Anvil 			13.8 [372.6] 	
+ 
+ = 433.56
+ 
+Structures
+Prometheus + Anvil*2	11(+ 0.4 * (13.8 + 13.8))[22.04]
+Blockade 				14.5
+3 AssPlant + Anvil 		13.8 [41.4]
+Adytum 					(0.55 * (11.24 * 2)) [12.36]
+Artillery Encampment 	11.25
+Skycom NeuroCore 		4.8(+0.6 * 10.35)[11.01] 
+4 Machine Mill + 2PW 	10.35 [41.4]
+Fission Charge 			9.0 
+Gungnir					8.0
+
+ = 170.96
+ 
+Vindicators & Formation
+Ragnarok	18
+Rally 		13.51
+
+Total = 782.53 -> 3912.65 per flurry
+
+Formation Rally
+50% * (0.9(SW) + 2.0(MT) + 1 APC + 0.6 * 30(Anvils) + 0.4 * 1.2(Prom) + 0.6 * 1 (Opak) + 0.5 * 1.2(Deacon) + 2 * 0.5 * 1.2(R&S) + 2 * 0.5 * 2 (H&C) + 0.4 * 0.6 (Siren))
+.5* (3.9 + 18 + 0.48 + 0.6 + 0.6 + 1.2 + 2 + 0.24)
+13.51
+
+Equaliser Rally
+2 * 50% * (0.9(SW) + 2.0(MT) + 1 APC + 0.6 * 30(Anvils) + 0.4 * 1.2(Prom) + 0.6 * 1 (Opak) + 0.5 * 1.2(Deacon))
+= 1 * (3.9 + 18 + 0.48 + 0.6 + 0.6)
+= 23.58
+
+***********************************************************************************
+Asphodel Vanguard Force
+
+Artemis 8-20-20
+
+Commanders (8)
+50.5	Gustmich (1.5)
+24.0	Vile (0.5)
+21.0	Korvald
+16.2 	Siren + Razor 
+15.0	Halcyon + 4 Tactical Infantry
+15.0	Cassandra + 4 Tactical Infantry
+11.5	Riggs + 2 PW
+11.5	Stavron + 2 PW
+= 164.7
+
+Assault (20)
+32.5	Blightcrawler (0.5 * 2)
+22.8	Annelid Mass (0.6)
+19.8	Orbo (0.6)
+18.4	XMS (0.4)
+18.0	Tremor Wyrm (0.4)
+18.0	Mammoth Tank
+12.9	Sidewinder
+12.0 	Anvil * 12 [144]
+11.86	Dreaship + Daemon + Azure Reaper (Required for XMS)
+= 276.46
+
+Structures (20)
+19.0		Viral Cluster * 20 [380] (.5)
+= 380
+
+TOTAL = 821.16 - 540 = 281.16
+= +133.78 Bonus over reg
+
+Average Jams = 2 + 3 + 10 = 15
+Average Anti-Heal = 80
+Maximum Jams = 30 of 18
+
+Average case should eliminate 530 healing leaving 10 remaining
+
+Kaszatah Bonus = 0.5 * (0.6 Orbo + 0.4 XMS1 + 0.8 XMS2 + 1.0 Dreadship1, + 0.5 Dreadship2 + 0.6 Rif-Daemon + 0.6 * (.4 * 3) Rif-Azure Reaper
+Kaszatah Bonus = 0.5 * (3.9 + 0.72)
+
+Notes: Obsidian & More Anvils will kill it quicker
+
+***********************************************************************************
+
+Gore Crawler w/ Malgoth = 2.6 + 0.5pu H
+Malgoth		13.2 + 12 AH + 16 BT * 1.5pu Heals = +24 Heals (tval=49.2)
+Infestor tank is worth 1.3 * 6.0 + 0.5H(GC) + 1.5H(Malgoth) = 9.8 total value
+
+***********************************************************************************
+
+Typhon Force
+
+Swarm Vindicator (8-25-12-1)
+
+Commanders 
+Octane		3.0 + 17.5H [20.5]
+Aiko		0.8 + 17.5H [18.3]
+Halcyon		(0.5 * (8.0 * 4))[16]
+Riggs		2.5(+ .5 * (11.7 * 2))[14.2]
+Stavron		2.5(+ .5 * (11.7 * 2))[14.2]
+Siren 		12(+ 0.4 * 2.5)[13]
+Vile		9.0
+Attalia		8.0 H
+ = 70.2 + 43 H
+ 
+Assault
+8 Quad Rover 2.6 + 9.6AH (tval=12.2) [20.8] + [76.8] AH from Jams
+17 Photon Walker 11.7 [198.9]
+ = 219.7 + 76.8 AH [296.5]
+
+Structures
+Prometheus + PW * 2 = 11(+ 0.4 * (11.7 + 11.7))[20.36]
+Blockade 14.5
+Skycom NeuroCore 6.24(+ 0.6 * 11.7)[13.26] 
+4 Machine Mill + 2PW 11.7 [46.8]
+Assembly Plant + Anvil [11.7]
+Artillery Encampment 11.25
+Beowulf 9.97
+2 Purifier 9.0H [18]
+
+ = 127.84 + 18 H
+ 
+Vindicators
+Omega 14.3
+ = 14.3 
+ 
+Medic Rush + 10 Heals
+Fortification (SC + VC) 0.5 * (4.8 + 2.4H + 4 AH) = 2.4 + 1.2H + 2AH
+= 2.4 + 11.2H + 2 AH
+
+Total = 
+427.41 D
+72.2 H
+78.8 AH
+
+-----
+BEO = 0.2 + 0.25 + 8 * 0.2(QR) + 17 * 0.3(PW) + .24(Prom) + 6 * .3(MM, Riggs, Stav) + .3 (SCNC) + .18 SCNC-PW + .6 Omega
+0.45 + 1.6 + 5.1 + .24 + 1.5 + .48 +.6 = 9.97
+-----
+Num Robots = 2C + 25A + 1S + 1Riggs + 1Stav + .6SCR + 3MMR + .8PR + .5 Fort = 34.9
+-----
+
+Damage Out 
+----------
+From force 			427.41, 
+My Force Damage 	10
+- Assault Jams 		-15.6 (8x 80% chance to Jam - 40% chance to prevent a Jam = 6 Quad Rovers(2.0) Jammed on average)		
+- epic healing 		-144 (6x 80% heal for 30)
++ Jammed Healing	76.8 (8 * 40% Jam + 1* 30% Jam - 3.2/6 Jammed on average)
++ My Anti Heals		2
+
+Total = 			356.61
+
+Damage In Normal
+----------
+Enemy Force Damage 	95 	
+Boson Lasers 		90 		50% 15-30 * 6
+Less Force Healing 	-72.2
+
+Total = 			112.8
+
+Ratio = 3.16:1 (Pre Enrage)
+1.5:1 overall dead minimum, 2:1 recommended & usually requested 3:1 for absolutely sweet
+
+Improvements
+3rd Purifier = -8D + 9H -2AH + 4D = -6o -9i = +0.2 (But increase stam to hit 625k by 50)
+A Machine Mill = +2.7D & +1H -2 AH + 4.5D + 5.2o -1i = +0.08 (And decrease stam to hit 625k by 25)
+
+***********************************************************************************
+
+Enclave Assualt Force
+
+Swarm Vindicator (8-25-12-1)
+
+Commanders 
+Stavron		2.5(+ .5 * (11.7 * 2))[14.2] + 10AH [24.2]
+Octane		3.0 + 15H [18]
+Halcyon		(0.5 * (8.0 * 4))[16]
+Aiko		0.8 + 15H [15.8]
+Riggs		2.5(+ .5 * (11.7 * 2))[14.2]
+Siren 		12(+ 0.4 * 2.5)[13]
+Vile		9.0
+Attalia		8.0 H
+ = 70.2 + 38 H + 10 AH
+ 
+Assault
+4 Tactical Infantry 8.0 + 10AH [32] + [40AH] from Jams
+1 Blightcrusher 2.5 + 15 DP
+3 Enforcer Mech 3.9 + 12AH [11.7] + [30AH] (cap due to no more healing)
+8 Enforcer Mech 3.9 + 9 DP [31.2] + [72 DP]
+9 Photon Walker 11.7 [105.3]
+ = 182.7 + 70 AH + 87 DP
+
+Structures
+Prometheus + PW * 2 = 11(+ 0.4 * (11.7 + 11.7))[20.36]
+Blockade 14.5
+Skycom NeuroCore 6.24(+ 0.6 * 11.7)[13.26] 
+Beowulf 12.02
+4 Machine Mill + 2PW 11.7 [46.8]
+Assembly Plan + Anvil [11.7]
+3 Purifier 9.0H [18]
+
+ = 115.49 + 27 H
+ 
+Vindicators
+Omega 14.3
+ = 14.3 
+ 
+Medic Rush + 10 Heals
+Fortification (SC + Pantheon) 0.5 * (4.8 + 2.4H + 2) = 3.4 + 1.2H
+= 3.4 + 11.2H
+
+Total = 
+416.29 D 	386.09
+76.2 H		76.2
+80 AH 		80		(Jamming Only)
+51 DP		87
+
+-----
+BEO = 0.2 + 0.25 + 11 * 0.55(EM) + 9 * 0.3(PW) + .24(Prom) + 5 * .3(MM, Riggs, Stav) + .3 (SCNC) + .18 SCNC-PW + .6 Omega
+0.45 + 6.05 + 2.7 + .24 + 1.5 + .48 + .6 = 12.02
+-----
+Num Robots = 2C + 20A + 1S + 1Riggs + 1Stav + .6SCR + 3MMR + .8PR + .5 Fort = 29.9
+-----
+
+Damage Out 
+----------
+From force 			386.09, 
+My Force Damage 	10
+- Assault Jams 		0 (4x 100% chance to Jamx2) However all jammers are blocked
+- epic healing 		-80 (4x 100% heal for 20)
++ Jammed Healing	80 (100% to have jammed all of these)
+
+Total = 			396.09
+
+Damage In Normal
+----------
+Enemy Force Damage 	102			
+Enclave Mothership 	50 			100% 25-75
+Enclave Mothership2	25 			 50% 25-75
+Paratroopers 		150 		100% 8-22 * 10
+Less Para Jams 		-87			5.8 * 15
+Less Force Healing 	-76.2
+
+Total = 			163.8
+
+Ratio = 2.1335 (Pre Enrage) (8 EMs)
+Ratio = 2.4181 (Pre Enrage) (11 EMs)
+
+2.5 overall dead minimum, 3 recommended 5 for absolutely sweet
+
+Improvements
+-1 PW + 1 EM = -7.8D + 9DP + .25 Beo = -7.55o -9i = +0.06
+A Machine Mill = +2.7D & +1H -2 D + 4.5D = + 5.2o -1i = +0.04 (But decrease stam to hit 625k by 25)
+
+***********************************************************************************
+
+Gorgon Force
+Regular Force
+ - Ascaris, -2 Photon Walker
+ + Maion, +2 Muon Walker
+
+***********************************************************************************
+
+Mortifex Force
+
+Swarm Vindicator (8-25-12-1)
+
+Commanders 
+ 
+Assault
+
+Structures
+
+***********************************************************************************
+
