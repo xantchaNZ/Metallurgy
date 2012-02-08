@@ -1,0 +1,10 @@
+Level 01 - 0 			No		max 15 members
+Level 02 - 100  (+100)	L1		max 20 members
+Level 03 - 250  (+150)	L1		max 25 Members
+Level 04 - 400  (+150)	L2		max 30 members
+Level 05 - 600  (+200)	L2		max 35 members
+Level 06 - 800  (+200)	L3		max 40 members
+Level 07 - 1050 (+250)	L3		max 45 members
+Level 08 - 1300 (+250)	L4		max 50 members
+Level 08 - 1600 (+300)	L4		max 50 members
+Level 08 - 1900 (+300)	L5		max 50 members
