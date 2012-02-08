@@ -98,6 +98,34 @@ namespace Data.Types
 			return result;
 		}
 
+		// This method assumes that the effect must be able to apply to this ability
+		public double CalculateBoostBonus(Force myForce, Force enemyForce, Effect boostEffect, bool vsEpic = true)
+		{
+			var bonus = 0.0;
+			if (boostEffect.Type == EffectType.Boost)
+			{
+				var boostBonus = (boostEffect.ParentAbilityProcChance * (boostEffect.EffectValue * 0.01));
+				bonus += (CalculateAverageDamage(myForce, enemyForce, null, vsEpic).Damage * boostBonus);
+			}
+			else if (boostEffect.Type == EffectType.Rally)
+			{
+				var abilBonus = boostEffect.ParentAbilityProcChance * boostEffect.EffectValue * ProcChance;
+				var flurryEffects = Effects.Where(x => x.Type == EffectType.FlurryDamage).ToList();
+				if (flurryEffects.Count > 0)
+				{
+					var baseBonus = abilBonus;
+					abilBonus = 0;
+					foreach (var flurryEffect in flurryEffects)
+					{
+						abilBonus += baseBonus * flurryEffect.EffectValue;
+					}
+				}
+				bonus += abilBonus;
+			}
+
+			return Math.Round(bonus, 2, MidpointRounding.AwayFromZero);
+		}
+
 		public CombatResult CalculateReinforcedDamage(Guid claimerID, Force myForce, Force enemyForce, List<Effect> boosts, bool vsEpic = true)
 		{
 			EnsureEffectProcs();

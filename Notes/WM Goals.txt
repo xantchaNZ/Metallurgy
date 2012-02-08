@@ -31,10 +31,10 @@ Fallen Heroes		4/130(205)		100 Mortifex, 5*6  Pathrazer, 75  Old Hammer
 Anchor				142/400(450)	120 Learnean Hydra, 100 Raid Lt. Emmanuel, 30*6 Pathrazer, 50*1 Binary 
 Hydra				34/190(220)		40  Learnean Hydra, 60  Raid Lt. Emmanuel, 15*6 Pathrazer, 30*1 Binary
 
-Behemoth 	0/103 @ (3 for 375k), 0/38  @ (8 for 1.5m)
+Behemoth 	0/89 @ (3 for 375k), 0/33  @ (8 for 1.5m)
 Enclave 	0/120			(800k)
 Mortifex	0/44/69 		(952k) 	(6 Sets)
-Hydra		0/2/22
+Hydra		1/2/22
 
 	*********
 	*  PVP  *

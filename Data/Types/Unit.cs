@@ -108,37 +108,26 @@ namespace Data.Types
 			}
 
 			var bonus = 0.0;
-			if (boostEffect.Type == EffectType.Boost)
+			foreach (var unitAbility in Abilities)
 			{
-				var boostBonus = (boostEffect.ParentAbilityProcChance * (boostEffect.EffectValue * 0.01));
-				bonus += (CalculateAverageDamage(myForce, enemyForce, null, vsEpic).Damage * boostBonus);
-			}
-			else if (boostEffect.Type == EffectType.Rally)
-			{
-				foreach (var unitAbility in Abilities)
-				{
-					var abilBonus = boostEffect.ParentAbilityProcChance * boostEffect.EffectValue * unitAbility.ProcChance;
-					var flurryEffects = unitAbility.Effects.Where(x => x.Type == EffectType.FlurryDamage).ToList();
-					if (flurryEffects.Count > 0)
-					{
-						var baseBonus = abilBonus;
-						abilBonus = 0;
-						foreach (var flurryEffect in flurryEffects)
-						{
-							abilBonus += baseBonus * flurryEffect.EffectValue;
-						}
-					}
-					bonus += abilBonus;
-				}
+				bonus += unitAbility.CalculateBoostBonus(myForce, enemyForce, boostEffect, vsEpic);
 			}
 
 			return Math.Round(bonus, 2, MidpointRounding.AwayFromZero);
 		}
 
-		public string DamageReport(Force force, Force enemy, List<Effect> boosts, bool isEpicBoss, string prefix = "")
+		public string DamageReport(Force force, Force enemy, List<Effect> boosts, bool isEpicBoss, string prefix = "", bool hideNamePrefix = false, double reinforcementRate = 0.0)
 		{
 			var sb = new StringBuilder();
-			sb.AppendFormat(prefix + "{0} [{1}]\r\n", Name, CalculateTotalDamageContribution(force, enemy, boosts, isEpicBoss).ToSimpleString());
+			if (reinforcementRate > 0.0) // TODO: Better fix for this
+			{
+				var contrib = CalculateTotalDamageContribution(force, enemy, boosts, isEpicBoss);
+				sb.AppendFormat((hideNamePrefix ? "" : prefix) + "{0} [{1}] at {2}% = [{3}]\r\n", Name, contrib.ToSimpleString(), reinforcementRate * 100, contrib.AdjustToProcChance(reinforcementRate).ToSimpleString());
+			}
+			else
+			{
+				sb.AppendFormat((hideNamePrefix ? "" : prefix) + "{0} [{1}]\r\n", Name, CalculateTotalDamageContribution(force, enemy, boosts, isEpicBoss).ToSimpleString());
+			}
 
 			var useableBoosts = new List<Effect>();
 			if (boosts != null)
@@ -157,12 +146,27 @@ namespace Data.Types
 				{
 					if(IsClassification(effect.TargetType))
 					{
-						sb.AppendFormat(prefix + "   + {0} {1} {2}\r\n", CalculateBoostBonus(force, enemy, effect, isEpicBoss), effect.ParentsName,  effect.Type == EffectType.Boost ? "Boost" : "Rally");
+						sb.AppendFormat(prefix + "   + {0} {1} {2}\r\n", ability.CalculateBoostBonus(force, enemy, effect, isEpicBoss), effect.ParentsName,  effect.Type == EffectType.Boost ? "Boost" : "Rally");
 					}
 				}
+				var repeatedReinforcements = new List<Guid>();
 				foreach (var reinforcement in force.GetReinforcedUnits(ID))
 				{
-					sb.AppendFormat(prefix + "   * Reinforced - {0}", reinforcement.DamageReport(force, enemy, boosts, isEpicBoss, prefix + "\t  "));
+					if (repeatedReinforcements.Contains(reinforcement.ID))
+					{
+						continue;
+					}
+
+					var count = force.GetReinforcedUnits(ID).Count(x => x.ID == reinforcement.ID);
+					if (reinforcement.Abilities.Any(x => x.HasEffect(EffectType.Reinforce)) == false && count > 1)
+					{
+						repeatedReinforcements.Add(reinforcement.ID);
+						sb.AppendFormat(prefix + "   * {0}x Reinforced - {1}", count, reinforcement.DamageReport(force, enemy, boosts, isEpicBoss, prefix + "\t  ", hideNamePrefix: true, reinforcementRate: 0.5)); // TODO: Better fix for this
+					}
+					else
+					{
+						sb.AppendFormat(prefix + "   * Reinforced - {0}", reinforcement.DamageReport(force, enemy, boosts, isEpicBoss, prefix + "\t  ", hideNamePrefix: true));
+					}
 				}
 				if (ability.HasEffect(EffectType.Boost))
 				{

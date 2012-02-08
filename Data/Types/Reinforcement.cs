@@ -44,7 +44,7 @@ namespace Data.Types
 		
 		public bool HasUnclaimedReinforcements()
 		{
-			return (NumClaimed > 0);
+			return (NumClaimed < NumAvailable);
 		}
 
 		public override string ToString()

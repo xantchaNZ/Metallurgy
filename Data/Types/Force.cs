@@ -229,24 +229,64 @@ namespace Data.Types
 		{
 			ResetCombat();
 			var boosts = GetBoostAbilities();
+			var repeatedUnits = new List<Guid>();
 
 			var commandersString = new StringBuilder();
+			var commTotal = new CombatResult();
 			foreach (var unit in Commanders)
 			{
 				commandersString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
+				commTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
 			}
+			commandersString.AppendFormat("\r\nTotal: {0}\r\n", commTotal.ToSimpleString());
 
 			var assaultString = new StringBuilder();
+			var assTotal = new CombatResult();
 			foreach (var unit in AssaultUnits)
 			{
-				assaultString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
+				if (repeatedUnits.Contains(unit.ID))
+				{
+					continue;
+				}
+
+				var count = AssaultUnits.Count(x => x.ID == unit.ID);
+				if (unit.Abilities.Any(x => x.HasEffect(EffectType.Reinforce)) == false && count > 1)
+				{
+					repeatedUnits.Add(unit.ID);
+					assaultString.AppendFormat("  {0}x {1}", count, unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  ", hideNamePrefix:true));
+					assTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss).AdjustToProcChance(count));
+				}
+				else
+				{
+					assaultString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
+					assTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
+				}
 			}
+			assaultString.AppendFormat("\r\nTotal: {0}\r\n", assTotal.ToSimpleString());
 
 			var structureString = new StringBuilder();
+			var strTotal = new CombatResult();
 			foreach (var unit in Structures)
 			{
-				structureString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
+				if (repeatedUnits.Contains(unit.ID))
+				{
+					continue;
+				}
+
+				var count = AssaultUnits.Count(x => x.ID == unit.ID);
+				if (unit.Abilities.Any(x => x.HasEffect(EffectType.Reinforce)) == false && count > 1)
+				{
+					repeatedUnits.Add(unit.ID);
+					structureString.AppendFormat("  {0}x {1}", count, unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  ", hideNamePrefix: true));
+					strTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss).AdjustToProcChance(count));
+				}
+				else
+				{
+					structureString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
+					strTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
+				}
 			}
+			structureString.AppendFormat("\r\nTotal: {0}\r\n", strTotal.ToSimpleString());
 
 			var vindiFormString = new StringBuilder();
 			foreach (var unit in Vindicators)
