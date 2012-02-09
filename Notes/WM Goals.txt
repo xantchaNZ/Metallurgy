@@ -12,9 +12,9 @@ Force 10 Black Lithid?
 27WC Remaining
 
 Goals
- * Level 565/600 for Black Lithid
+ * Level 570/600 for Black Lithid
 	* 0/6 Bloodthirsty Jammer (Pathrazer) ( Empress, Alaric, Oracle, Apollo, Ascaris )
- * 20/34 Anvil for Armoured force (27 + 3 AP + 2 Deacon + 2 Prom)
+ * 21/34 Anvil for Armoured force (27 + 3 AP + 2 Deacon + 2 Prom)
  * 40/43 PWs for current Vindi
  * Preator, Hydra, Raid Lt, Mortifex
  * 0/8 Sharpshooters
@@ -23,25 +23,25 @@ Goals
 	* EPICS *
 	*********
 	
-Prestige			23/80			80 Division
-Behemoth			14/280(480)		20*15 Anvil, (80 Gigas)
+Prestige			27/80			80 Division
+Behemoth			14/260(480)		20*13 Anvil, (80 Gigas)
 Aerial Assualt		1/360			40*8 Sharpshooter
 Mortifex			28/260(385)		200 Mortifex, 10*6 Pathrazer, 125 Old Hammer
 Fallen Heroes		4/130(205)		100 Mortifex, 5*6  Pathrazer, 75  Old Hammer
-Anchor				142/400(450)	120 Learnean Hydra, 100 Raid Lt. Emmanuel, 30*6 Pathrazer, 50*1 Binary 
-Hydra				34/190(220)		40  Learnean Hydra, 60  Raid Lt. Emmanuel, 15*6 Pathrazer, 30*1 Binary
+Anchor				152/400(450)	120 Learnean Hydra, 100 Raid Lt. Emmanuel, 30*6 Pathrazer, 50*1 Binary 
+Hydra				37/190(220)		40  Learnean Hydra, 60  Raid Lt. Emmanuel, 15*6 Pathrazer, 30*1 Binary
 
 Behemoth 	0/89 @ (3 for 375k), 0/33  @ (8 for 1.5m)
 Enclave 	0/120			(800k)
-Mortifex	0/44/69 		(952k) 	(6 Sets)
-Hydra		1/2/22
+Mortifex	0/32/42/69 		(952k) 	(6 Sets)
+Hydra		0/1/21
 
 	*********
 	*  PVP  *
 	*********
 	
 Combat Rating - http://apps.facebook.com/war_machine/?page=boss
-* 40000/60000 CR
+* 40040/60000 CR
 * Obsidian (PVP / Asp)		60k, 20k		2.5k-40k Stam
 * Rifter 					100k, 40k		5k-80k Stam
 
@@ -51,7 +51,6 @@ Arena				10/125		75 Enclave Pylon, 30 Boris, 20 Pyro Rig
 
 Faction L3 (800r)	0/100		50 Praetor, 50 Rancor
 Faction L4 (1300r)	0/200		100 Preator, 100 Rancor
-
 
 Level 02 - 100  L1
 Level 04 - 400  L2
@@ -69,7 +68,7 @@ Level 10 - 1800 L5
 
 Energy		800
 Stamina		2000
-Attack		1036/2000		
+Attack		1053/2000		
 Defense		500
 
 @ 6 stat points a day from 1 level up & training = 13 Days
@@ -83,8 +82,6 @@ Force Defense: 	270,110
 daily energy = 1440 Regen + 800 level up + 1000 Stimpack = 3240
 
 --------------------------------------------------------------------------
-
-
 
 Malgoth the Cannibal	Collection
 Devour Flesh	50%	11-33 + 20AH

@@ -232,16 +232,12 @@ namespace Data.Types
 			var repeatedUnits = new List<Guid>();
 
 			var commandersString = new StringBuilder();
-			var commTotal = new CombatResult();
 			foreach (var unit in Commanders)
 			{
 				commandersString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
-				commTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
 			}
-			commandersString.AppendFormat("\r\nTotal: {0}\r\n", commTotal.ToSimpleString());
 
 			var assaultString = new StringBuilder();
-			var assTotal = new CombatResult();
 			foreach (var unit in AssaultUnits)
 			{
 				if (repeatedUnits.Contains(unit.ID))
@@ -254,18 +250,14 @@ namespace Data.Types
 				{
 					repeatedUnits.Add(unit.ID);
 					assaultString.AppendFormat("  {0}x {1}", count, unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  ", hideNamePrefix:true));
-					assTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss).AdjustToProcChance(count));
 				}
 				else
 				{
 					assaultString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
-					assTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
 				}
 			}
-			assaultString.AppendFormat("\r\nTotal: {0}\r\n", assTotal.ToSimpleString());
 
 			var structureString = new StringBuilder();
-			var strTotal = new CombatResult();
 			foreach (var unit in Structures)
 			{
 				if (repeatedUnits.Contains(unit.ID))
@@ -278,15 +270,12 @@ namespace Data.Types
 				{
 					repeatedUnits.Add(unit.ID);
 					structureString.AppendFormat("  {0}x {1}", count, unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  ", hideNamePrefix: true));
-					strTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss).AdjustToProcChance(count));
 				}
 				else
 				{
 					structureString.Append(unit.DamageReport(this, enemy, boosts, enemy.IsEpicBoss, "  "));
-					strTotal.Add(unit.CalculateTotalDamageContribution(this, enemy, boosts, enemy.IsEpicBoss));
 				}
 			}
-			structureString.AppendFormat("\r\nTotal: {0}\r\n", strTotal.ToSimpleString());
 
 			var vindiFormString = new StringBuilder();
 			foreach (var unit in Vindicators)
